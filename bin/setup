@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Run this script to setup the app
+
+# Exit if any subcommand fails
+set -e
+
+npm install -g gulp-cli
+npm install
