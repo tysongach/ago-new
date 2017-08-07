@@ -1,7 +1,9 @@
 # agokc2018.com
 
 This is the website for the American Guild of Organists 2018 National
-Convention in Kansas City.
+Convention in Kansas City. It runs on [Kirby].
+
+[Kirby]: https://getkirby.com/
 
 ## Setup
 
@@ -22,3 +24,11 @@ Convention in Kansas City.
     ```bash
     gulp
     ```
+
+## Update Kirby
+
+To update the Kirby CMS, run:
+
+```bash
+bin/update-kirby
+```
