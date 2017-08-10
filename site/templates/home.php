@@ -13,7 +13,8 @@
 <span><?= $site->event_location() ?></span>
 
 <ul>
-  <? foreach($pages->find("advertisements")->children() as $ad): ?>
+  <? foreach($page->advertisements()->toStructure() as $ad): ?>
+    <? $ad = $site->find("advertisements")->find($ad) ?>
     <li>
       <a href="<?= $ad->destination_url() ?>">
         <img src="<?= $ad->images()->find($ad->art())->crop(480, 320)->url() ?>"
