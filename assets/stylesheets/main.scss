@@ -1,1 +1,8 @@
 @import "bourbon";
+
+body {
+  @include margin(null auto);
+  font-family: $font-stack-system;
+  max-width: 40rem;
+  padding: 2rem;
+}
