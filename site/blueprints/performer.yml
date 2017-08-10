@@ -1,0 +1,6 @@
+title: Performer
+pages: false
+fields:
+  title:
+    label: Performer Name
+    type: text

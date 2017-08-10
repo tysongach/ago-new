@@ -1,11 +1,10 @@
-title: Advertisements
+title: Events
 pages:
-  template: advertisement
+  num: zero
+  template: event
 files: false
 options:
   delete: false
-  preview: false
-  status: false
   template: false
   url: false
 fields:

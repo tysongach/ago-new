@@ -1,0 +1,28 @@
+title: Event
+pages: false
+fields:
+  title:
+    label: Title
+    type: text
+  venue:
+    label: Venue
+    type: select
+    options: query
+    query:
+      page: ../../venues
+      fetch: children
+  performers:
+    label: Performers
+    type: structure
+    default: # currently required due to bug
+      - performer: jerry-seinfeld
+    entry: >
+      {{performer}}
+    fields:
+      performer:
+        label: Performer
+        type: select
+        options: query
+        query:
+          page: ../../performers
+          fetch: children

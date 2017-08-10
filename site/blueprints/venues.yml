@@ -1,11 +1,10 @@
-title: Advertisements
+title: Venues
 pages:
-  template: advertisement
+  num: zero
+  template: venue
 files: false
 options:
   delete: false
-  preview: false
-  status: false
   template: false
   url: false
 fields:

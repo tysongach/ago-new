@@ -1,0 +1,6 @@
+title: Venue
+pages: false
+fields:
+  title:
+    label: Venue Name
+    type: text

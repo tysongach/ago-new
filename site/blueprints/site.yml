@@ -1,5 +1,6 @@
 title: Site
-pages: default
+pages:
+  template: default
 fields:
   title:
     label: Website Title

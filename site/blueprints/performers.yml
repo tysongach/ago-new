@@ -1,11 +1,10 @@
-title: Advertisements
+title: Performers
 pages:
-  template: advertisement
+  num: zero
+  template: performer
 files: false
 options:
   delete: false
-  preview: false
-  status: false
   template: false
   url: false
 fields:
