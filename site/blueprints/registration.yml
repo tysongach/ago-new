@@ -1,0 +1,11 @@
+title: Registration Page
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type: text
+  cvent_registration_url:
+    label: Cvent Registration URL
+    type: url
+    required: true
