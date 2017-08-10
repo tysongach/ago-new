@@ -12,4 +12,16 @@
 
 <span><?= $site->event_location() ?></span>
 
+<ul>
+  <? foreach($pages->find("advertisements")->children() as $ad): ?>
+    <li>
+      <a href="<?= $ad->destination_url() ?>">
+        <img src="<?= $ad->images()->find($ad->art())->crop(480, 320)->url() ?>"
+             alt="">
+        <?= $ad->text() ?>
+      </a>
+    </li>
+  <? endforeach ?>
+</ul>
+
 <? snippet("footer") ?>

@@ -1,0 +1,13 @@
+Title: Test Advertisement
+
+----
+
+Art: ad.jpg
+
+----
+
+Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non ornare orci, ac nullam.
+
+----
+
+Destination-url: https://www.google.com

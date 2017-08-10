@@ -1,0 +1,14 @@
+title: Advertisements
+pages: advertisement
+files: false
+options:
+  delete: false
+  preview: false
+  status: false
+  template: false
+  url: false
+fields:
+  title:
+    label: Title
+    type: text
+    readonly: true
