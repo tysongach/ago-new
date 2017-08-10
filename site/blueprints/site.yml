@@ -1,0 +1,16 @@
+title: Site
+fields:
+  title:
+    label: Website Title
+    type: text
+  event_start_date:
+    extends: date
+    label: Convention Start Date
+    width: 1/2
+  event_end_date:
+    extends: date
+    label: Convention End Date
+    width: 1/2
+  event_location:
+    label: Location
+    type: text

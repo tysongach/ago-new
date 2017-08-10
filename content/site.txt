@@ -1,1 +1,13 @@
-Title: Site Title
+Title: The 2018 AGO National Convention
+
+----
+
+Event-start-date: 2018-07-02
+
+----
+
+Event-end-date: 2018-07-06
+
+----
+
+Event-location: Kansas City, Missouri
