@@ -8,3 +8,4 @@
     <?= css("assets/stylesheets/main.css") ?>
   </head>
   <body>
+    <? snippet("site-navigation") ?>
