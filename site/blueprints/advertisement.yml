@@ -8,7 +8,6 @@ files:
   height: 320
 options:
   preview: false
-  status: false
   url: false
 fields:
   title:
