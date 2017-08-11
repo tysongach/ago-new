@@ -1,1 +1,8 @@
 Title: Home
+
+----
+
+Advertisements: 
+
+- 
+  advertisement: test-advertisement

@@ -1,13 +1,7 @@
 label: Advertisements
 type: structure
-limit: 3
-# help: >
-#   Don’t see the ad you’re looking for?
-#   <a href="/panel/pages/advertisements/add">Add a new advertisement ↗</a>
 default: # currently required due to bug
   - advertisement: foo
-entry: >
-  {{advertisement}}
 fields:
   advertisement:
     label: Advertisement
@@ -16,4 +10,3 @@ fields:
     query:
       page: advertisements
       fetch: children
-      text: "{{title}}"
