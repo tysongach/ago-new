@@ -1,6 +1,8 @@
 title: Performances
 pages:
-  num: zero
+  num:
+    mode: date
+    field: start_date_time
   template: performance
 files: false
 options:
