@@ -15,7 +15,9 @@
 <ul>
   <? foreach($featured_performances as $featured_performance): ?>
     <li>
-      <?= $featured_performance->title() ?>
+      <a href="<?= $featured_performance->url() ?>">
+        <?= $featured_performance->title() ?>
+      </a>
     </li>
   <? endforeach ?>
 </ul>
