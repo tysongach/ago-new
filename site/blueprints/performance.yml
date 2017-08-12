@@ -34,3 +34,7 @@ fields:
         query:
           page: ../../performers
           fetch: visibleChildren
+  featured:
+    label: Feature this performance on the home page?
+    type: toggle
+    text: yes/no

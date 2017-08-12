@@ -13,6 +13,14 @@
 <span><?= $site->event_location() ?></span>
 
 <ul>
+  <? foreach(page("programming")->children()->find("performances")->children()->visible()->filterBy("featured", "true") as $featured_performance): ?>
+    <li>
+      <?= $featured_performance->title() ?>
+    </li>
+  <? endforeach ?>
+</ul>
+
+<ul>
   <? foreach($page->advertisements()->toStructure() as $ad): ?>
     <? $ad = $site->find("advertisements")->find($ad) ?>
     <li>
