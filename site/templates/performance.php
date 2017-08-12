@@ -12,7 +12,9 @@
   <? foreach($page->performers()->toStructure() as $performer): ?>
     <? $performer = $page->parent()->siblings()->find("performers")->find($performer) ?>
     <dd>
-      <p><?= $performer->title() ?></p>
+      <a href="<?= $performer->url() ?>">
+        <?= $performer->title() ?>
+      </a>
       <p><?= $performer->bio() ?></p>
     </dd>
   <? endforeach ?>
