@@ -4,9 +4,4 @@ default: # currently required due to bug
   - advertisement: foo
 fields:
   advertisement:
-    label: Advertisement
-    type: select
-    options: query
-    query:
-      page: advertisements
-      fetch: children
+    extends: pick_advertisement
