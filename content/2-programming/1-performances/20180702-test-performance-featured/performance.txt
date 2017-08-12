@@ -1,0 +1,24 @@
+Title: Test Performance (featured)
+
+----
+
+Start-date-time: 2018-07-02
+
+----
+
+End-date-time: 2018-07-02
+
+----
+
+Venue: test-venue
+
+----
+
+Performers: 
+
+- 
+  performer: test-performer
+
+----
+
+Featured: true
