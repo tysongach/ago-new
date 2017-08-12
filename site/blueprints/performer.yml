@@ -1,0 +1,26 @@
+title: Performer
+pages: false
+fields:
+  title:
+    label: Full Name
+    type: text
+  photo:
+    label: Photo
+    type: image
+  bio:
+    label: Bio
+    type: textarea
+  links:
+    label: Links
+    type: structure
+    default: # currently required due to bug
+      - performer: foo
+    style: table
+    fields:
+      name:
+        label: Name
+        type: text
+        placeholder: e.g. Website or Twitter
+      url:
+        label: URL
+        type: url

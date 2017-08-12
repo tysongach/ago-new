@@ -1,0 +1,11 @@
+title: Performers
+pages:
+  num: zero
+  template: performer
+files: false
+options:
+  template: false
+fields:
+  title:
+    label: Title
+    type: text
