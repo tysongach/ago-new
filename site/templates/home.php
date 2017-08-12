@@ -13,24 +13,24 @@
 <span><?= $site->event_location() ?></span>
 
 <ul>
-  <? foreach(page("programming")->children()->find("performances")->children()->visible()->filterBy("featured", "true") as $featured_performance): ?>
+  <? foreach($featured_performances as $featured_performance): ?>
     <li>
       <?= $featured_performance->title() ?>
     </li>
   <? endforeach ?>
 </ul>
 
-<ul>
-  <? foreach($page->advertisements()->toStructure() as $ad): ?>
-    <? $ad = $site->find("advertisements")->find($ad) ?>
-    <li>
-      <a href="<?= $ad->destination_url() ?>">
-        <img src="<?= $ad->images()->find($ad->art())->crop(480, 320)->url() ?>"
-             alt="">
+<? foreach($page_ads as $ad): ?>
+  <? $ad = $pages->find("advertisements")->find($ad) ?>
+  <figure>
+    <a href="<?= $ad->destination_url() ?>">
+      <img src="<?= $ad->images()->find($ad->art())->crop(480, 320)->url() ?>"
+           alt="">
+      <figcaption>
         <?= $ad->text() ?>
-      </a>
-    </li>
-  <? endforeach ?>
-</ul>
+      </figcaption>
+    </a>
+  </figure>
+<? endforeach ?>
 
 <? snippet("footer") ?>
