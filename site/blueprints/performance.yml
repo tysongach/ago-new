@@ -1,0 +1,13 @@
+title: Performance
+pages: false
+fields:
+  title:
+    label: Title
+    type: text
+  venue:
+    label: Venue
+    type: select
+    options: query
+    query:
+      page: ../../venues
+      fetch: children

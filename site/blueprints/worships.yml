@@ -1,14 +1,11 @@
-title: Events
+title: Worships
 pages:
   num: zero
-  template: event
+  template: worship
 files: false
 options:
-  delete: false
   template: false
-  url: false
 fields:
   title:
     label: Title
     type: text
-    readonly: true
