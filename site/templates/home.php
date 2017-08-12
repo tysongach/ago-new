@@ -24,15 +24,7 @@
 
 <? foreach($page_ads as $ad): ?>
   <? $ad = $pages->find("advertisements")->find($ad) ?>
-  <figure>
-    <a href="<?= $ad->destination_url() ?>" target="_blank">
-      <img src="<?= $ad->images()->find($ad->art())->crop(480, 320)->url() ?>"
-           alt="">
-      <figcaption>
-        <?= $ad->text() ?>
-      </figcaption>
-    </a>
-  </figure>
+  <? snippet("advertisement", array("ad" => $ad)) ?>
 <? endforeach ?>
 
 <? snippet("layout-bottom") ?>
