@@ -1,4 +1,4 @@
-<? snippet("header") ?>
+<? snippet("layout-top") ?>
 
 <h1><?= $page->title()->html() ?></h1>
 
@@ -8,4 +8,4 @@
 
 <p><?= $page->bio() ?></p>
 
-<? snippet("footer") ?>
+<? snippet("layout-bottom") ?>

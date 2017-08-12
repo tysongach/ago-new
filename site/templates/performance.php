@@ -1,4 +1,4 @@
-<? snippet("header") ?>
+<? snippet("layout-top") ?>
 
 <h1><?= $page->title()->html() ?></h1>
 
@@ -20,4 +20,4 @@
   <? endforeach ?>
 </dl>
 
-<? snippet("footer") ?>
+<? snippet("layout-bottom") ?>

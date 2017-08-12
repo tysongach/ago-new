@@ -1,4 +1,4 @@
-<? snippet("header") ?>
+<? snippet("layout-top") ?>
 
 <h1><?= $site->title() ?></h1>
 
@@ -35,4 +35,4 @@
   </figure>
 <? endforeach ?>
 
-<? snippet("footer") ?>
+<? snippet("layout-bottom") ?>

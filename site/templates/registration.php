@@ -1,4 +1,4 @@
-<? snippet("header") ?>
+<? snippet("layout-top") ?>
 
 <h1><?= $page->title()->html() ?></h1>
 
@@ -6,4 +6,4 @@
   Go to Cvent
 </a>
 
-<? snippet("footer") ?>
+<? snippet("layout-bottom") ?>
