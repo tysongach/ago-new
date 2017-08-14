@@ -11,3 +11,5 @@ fields:
   title:
     label: Title
     type: text
+  advertisement:
+    extends: pick_advertisement
