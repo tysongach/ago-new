@@ -12,3 +12,5 @@ fields:
     type: text
   advertisements:
     extends: pick_many_advertisements
+    limit: 3
+    help: Pick 3 advertisements
