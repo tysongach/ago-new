@@ -4,3 +4,10 @@ fields:
   title:
     label: Title
     type: text
+  location:
+    label: Location
+    type: text
+    placeholder: e.g. New York, New York
+  website:
+    label: Website URL
+    type: url
