@@ -38,3 +38,4 @@ fields:
     label: Feature this performance on the home page?
     type: toggle
     text: yes/no
+    default: false
