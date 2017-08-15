@@ -2,7 +2,7 @@ title: Performances
 pages:
   num:
     mode: date
-    field: start_date_time
+    field: start_date
   template: performance
 files: false
 options:
