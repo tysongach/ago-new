@@ -11,3 +11,11 @@ Event-end-date: 2018-07-06
 ----
 
 Event-location: Kansas City, Missouri
+
+----
+
+Types: foo,bar,baz
+
+----
+
+Event-types: Worship,Exhibit,Workshop,Performance

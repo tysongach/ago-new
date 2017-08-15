@@ -3,7 +3,7 @@
 <h1><?= $page->title() ?></h1>
 
 <ul>
-  <? foreach($ordered_items as $item): ?>
+  <? foreach($ordered_events as $item): ?>
     <li>
       <?= $item->title() ?>
       <em>

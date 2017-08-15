@@ -1,0 +1,15 @@
+title: Event
+fields:
+  title:
+    label: Title
+    type: text
+  event_type:
+    label: Event Type
+    type: select
+    options: field
+    field:
+      page: /
+      name: event_types
+      separator: ,
+  date_and_time:
+    extends: start_end_datetime

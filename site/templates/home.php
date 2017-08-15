@@ -14,21 +14,9 @@
 
 <?= $pages->find("about")->story()->kirbytext() ?>
 
-<ul>
-  <? foreach($featured_performances as $featured_performance): ?>
-    <li>
-      <a href="<?= $featured_performance->url() ?>">
-        <?= $featured_performance->title() ?>
-      </a>
-    </li>
-  <? endforeach ?>
-</ul>
-
 <? foreach($page_ads as $ad): ?>
   <? $ad = $pages->find("advertisements")->find($ad) ?>
   <? snippet("advertisement", array("ad" => $ad)) ?>
 <? endforeach ?>
-
-<?= $pages->find("programming")->find("youth-programs")->text()->kirbytext() ?>
 
 <? snippet("layout-bottom") ?>

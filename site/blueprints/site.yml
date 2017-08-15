@@ -16,3 +16,6 @@ fields:
   event_location:
     label: Location
     type: text
+  event_types:
+    label: Event Types
+    type: tags

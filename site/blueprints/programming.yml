@@ -1,6 +1,9 @@
 title: Programming
-pages: true
-files: false
+pages:
+  num:
+    mode: date
+    field: start_date
+  template: event
 fields:
   title:
     label: Title
