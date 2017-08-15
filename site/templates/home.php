@@ -29,4 +29,6 @@
   <? snippet("advertisement", array("ad" => $ad)) ?>
 <? endforeach ?>
 
+<?= $pages->find("programming")->find("youth-programs")->text()->kirbytext() ?>
+
 <? snippet("layout-bottom") ?>
