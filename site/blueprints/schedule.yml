@@ -1,0 +1,11 @@
+title: Schedule
+pages: false
+files: false
+options:
+  delete: false
+  update: false
+  url: false
+fields:
+  title:
+    label: Title
+    type: text

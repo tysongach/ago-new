@@ -4,3 +4,5 @@ fields:
   title:
     label: Title
     type: text
+  date_and_time:
+    extends: start_end_datetime

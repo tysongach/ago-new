@@ -4,14 +4,8 @@ fields:
   title:
     label: Title
     type: text
-  start_date_time:
-    extends: datetime
-    label: Start
-    width: 1/2
-  end_date_time:
-    extends: datetime
-    label: End
-    width: 1/2
+  date_and_time:
+    extends: start_end_datetime
   venue:
     label: Venue
     type: select

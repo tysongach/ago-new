@@ -1,3 +1,4 @@
 label: Date
 type: date
 format: MM/DD/YYYY
+default: 2018-07-02

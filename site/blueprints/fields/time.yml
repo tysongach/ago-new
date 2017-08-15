@@ -1,0 +1,5 @@
+label: Time
+type: time
+format: 12
+interval: 15
+default: 08:00 AM
