@@ -1,6 +1,0 @@
-label: Advertisement
-type: select
-options: query
-query:
-  page: advertisements
-  fetch: children
