@@ -29,3 +29,10 @@ fields:
     help: >
       We automatically add standard campaign parameters to the URL for tracking
       through Web analytics.
+  page:
+    label: Show on this page
+    type: select
+    options: query
+    query:
+      page: /
+      fetch: visibleChildren

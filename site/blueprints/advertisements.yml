@@ -1,5 +1,6 @@
 title: Advertisements
 pages:
+  num: zero
   template: advertisement
 files: false
 options:

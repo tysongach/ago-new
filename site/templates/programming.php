@@ -30,4 +30,8 @@
   <? endforeach ?>
 </ul>
 
+<? foreach($page_ads as $ad): ?>
+  <? snippet("advertisement", array("ad" => $ad)) ?>
+<? endforeach ?>
+
 <? snippet("layout-bottom") ?>

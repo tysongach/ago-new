@@ -1,5 +1,6 @@
 <? return function($site, $pages, $page) {
-  $page_ads = $page->advertisements()->toStructure();
+  $all_ads = $pages->find("advertisements")->children()->visible();
+  $page_ads = $all_ads->filterBy("page", $page)->shuffle()->limit(3);
 
   return compact("featured_performances", "page_ads");
 } ?>

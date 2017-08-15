@@ -15,7 +15,6 @@
 <?= $pages->find("about")->story()->kirbytext() ?>
 
 <? foreach($page_ads as $ad): ?>
-  <? $ad = $pages->find("advertisements")->find($ad) ?>
   <? snippet("advertisement", array("ad" => $ad)) ?>
 <? endforeach ?>
 
