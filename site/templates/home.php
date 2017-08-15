@@ -12,6 +12,8 @@
 
 <span><?= $site->event_location() ?></span>
 
+<?= $pages->find("about")->story()->kirbytext() ?>
+
 <ul>
   <? foreach($featured_performances as $featured_performance): ?>
     <li>
