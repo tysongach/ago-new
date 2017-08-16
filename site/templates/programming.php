@@ -25,7 +25,9 @@
 <ul>
   <? foreach($events as $event): ?>
     <li>
-      <?= $event->title() ?>
+      <a href="<?= $event->url() ?>">
+        <?= $event->title() ?>
+      </a>
     </li>
   <? endforeach ?>
 </ul>
