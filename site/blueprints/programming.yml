@@ -8,3 +8,11 @@ fields:
   title:
     label: Title
     type: text
+  event_types:
+    label: Show these event types
+    type: checkboxes
+    columns: 3
+    options: field
+    field:
+      page: /
+      name: event_types
