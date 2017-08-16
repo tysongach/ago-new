@@ -31,4 +31,6 @@
 
 <?= $pages->find("programming")->find("youth-programs")->text()->kirbytext() ?>
 
+<? snippet("newsletter-signup") ?>
+
 <? snippet("layout-bottom") ?>
