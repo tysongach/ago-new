@@ -14,6 +14,16 @@
 
 <?= $pages->find("about")->story()->kirbytext() ?>
 
+<ul>
+  <? foreach($featured_events as $featured_event): ?>
+    <li>
+      <a href="<?= $featured_event->url() ?>">
+        <?= $featured_event->title() ?>
+      </a>
+    </li>
+  <? endforeach ?>
+</ul>
+
 <? foreach($page_ads as $ad): ?>
   <? snippet("advertisement", array("ad" => $ad)) ?>
 <? endforeach ?>

@@ -10,6 +10,10 @@ fields:
     field:
       page: /
       name: event_types
-      separator: ,
   date_and_time:
     extends: start_end_datetime
+  featured:
+    label: Feature this event on the home page?
+    type: toggle
+    text: yes/no
+    default: false
