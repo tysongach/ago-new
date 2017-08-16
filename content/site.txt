@@ -18,4 +18,4 @@ Types: foo,bar,baz
 
 ----
 
-Event-types: Worship,Exhibit,Workshop,Performance
+Event-types: Worship,Exhibit,Workshop,Performance,travel
