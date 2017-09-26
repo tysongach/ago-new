@@ -16,8 +16,6 @@ fields:
   performers:
     label: Performers
     type: structure
-    default: # currently required due to bug
-      - performer: jerry-seinfeld
     entry: >
       {{performer}}
     fields:

@@ -1,7 +1,5 @@
 label: Advertisements
 type: structure
-default: # currently required due to bug
-  - advertisement: foo
 fields:
   advertisement:
     extends: pick_advertisement
