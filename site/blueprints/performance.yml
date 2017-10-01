@@ -26,6 +26,19 @@ fields:
         query:
           page: ../../performers
           fetch: visibleChildren
+  composers:
+    label: Composers
+    type: structure
+    entry: >
+      {{composer}}
+    fields:
+      composer:
+        label: Composer
+        type: select
+        options: query
+        query:
+          page: ../../composers
+          fetch: visibleChildren
   featured:
     label: Feature this performance on the home page?
     type: toggle

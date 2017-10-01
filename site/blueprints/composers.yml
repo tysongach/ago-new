@@ -1,0 +1,11 @@
+title: Composers
+pages:
+  num: zero
+  template: composer
+files: false
+options:
+  template: false
+fields:
+  title:
+    label: Title
+    type: text

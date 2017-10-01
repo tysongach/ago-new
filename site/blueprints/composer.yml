@@ -1,0 +1,36 @@
+title: Composer
+pages: false
+fields:
+  title:
+    label: Full Name
+    type: text
+  job_title:
+    label: Title
+    type: text
+    placeholder: e.g. Organist
+  workplace:
+    label: Workplace
+    type: text
+    placeholder: e.g. St. Thomas Church
+  location:
+    label: Location
+    type: text
+    placeholder: e.g. New York, New York
+  photo:
+    label: Photo
+    type: image
+  bio:
+    label: Bio
+    type: textarea
+  links:
+    label: Links
+    type: structure
+    style: table
+    fields:
+      name:
+        label: Name
+        type: text
+        placeholder: e.g. Website or Twitter
+      url:
+        label: URL
+        type: url
