@@ -9,5 +9,5 @@ fields:
     type: text
     placeholder: e.g. New York, New York
   website:
-    label: Website URL
+    label: Chapter Page URL
     type: url
