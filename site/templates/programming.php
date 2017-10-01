@@ -1,1 +1,1 @@
-<? go(page("programming")->children()->visible()->first(), 301); ?>
+<? go($page->children()->visible()->first(), 301); ?>
