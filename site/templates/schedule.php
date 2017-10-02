@@ -1,26 +1,39 @@
 <? snippet("layout-top") ?>
 
-<h1><?= $page->title() ?></h1>
+<header>
+  <h1><?= $page->title() ?></h1>
+</header>
 
 <table>
   <thead>
     <tr>
       <th scope="col">Time</th>
       <th scope="col">Event</th>
-      <th scope="col">Featuring</th>
     </tr>
   </thead>
   <tbody>
-    <? foreach($ordered_items as $item): ?>
+    <? foreach($groupedEvents as $day => $eventsPerDay): ?>
       <tr>
-        <td>
-          <?= $item->date("M j, Y", "start_date") ?>
-          <?= $item->date("g:ia ", "start_time") ?>
-          <?= $item->date("g:ia ", "end_time") ?>
-        </td>
-        <td><?= $item->title() ?></td>
-        <td></td>
+        <th colspan="2">
+          <?= $day ?></h2>
+        </th>
       </tr>
+
+      <? foreach($eventsPerDay->map(function($page) {
+           $page->sortableTime = strtotime($page->date("H:i", "time"));
+           return $page;
+         }
+      )->sortBy("sortableTime", "asc") as $event): ?>
+        <tr>
+          <td>
+            <?= $event->date("g:i", "time") ?>&thinsp;&ndash;<br>
+            <?= $event->date("g:ia", "end_time") ?>
+          </td>
+          <td>
+            <?= $event->title() ?>
+          </td>
+        </tr>
+      <? endforeach; ?>
     <? endforeach ?>
   </tbody>
 </table>
