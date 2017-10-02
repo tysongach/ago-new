@@ -1,18 +1,14 @@
 type: group
 fields:
-  start_date:
+  date:
     extends: date
-    label: Start Date
-    width: 1/4
+    label: Date
+    width: 1/3
   start_time:
     extends: time
     label: Start Time
-    width: 1/4
-  end_date:
-    extends: date
-    label: End Date
-    width: 1/4
+    width: 1/3
   end_time:
     extends: time
     label: End Time
-    width: 1/4
+    width: 1/3
