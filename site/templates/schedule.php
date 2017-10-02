@@ -9,12 +9,13 @@
     <tr>
       <th scope="col">Time</th>
       <th scope="col">Event</th>
+      <th scope="col">Performers</th>
     </tr>
   </thead>
   <tbody>
     <? foreach($groupedEvents as $day => $eventsPerDay): ?>
       <tr>
-        <th colspan="2">
+        <th colspan="3">
           <?= $day ?></h2>
         </th>
       </tr>
@@ -31,6 +32,15 @@
           </td>
           <td>
             <?= $event->title() ?>
+          </td>
+          <td>
+            <? foreach($event->performers()->toStructure() as $performer): ?>
+              <? $performers = $pages->find("programming")->children()->find("performers") ?>
+              <? $performer = $performers->find($performer) ?>
+              <a href="<?= $performer->url() ?>">
+                <?= $performer->title() ?>
+              </a>
+            <? endforeach ?>
           </td>
         </tr>
       <? endforeach; ?>
