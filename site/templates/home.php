@@ -1,6 +1,6 @@
 <? snippet("layout-top") ?>
 
-<header class="p-grid">
+<header class="p-grid p-section">
   <div class="p-grid__item u-1/4">
     <h1><?= $site->title() ?></h1>
 
@@ -12,11 +12,16 @@
       <?= $site->date("j, Y", "event_end_date") ?>
     </time>
 
+    <br>
+
     <span><?= $site->event_location() ?></span>
   </div>
 
   <div class="p-grid__item u-3/4">
-    <img src="http://fillmurray.com/1000/700">
+    <? if($photo = $page->hero_photo()->toFile()): ?>
+      <img src="<?= $photo->url() ?>"
+           alt="">
+    <? endif ?>
   </div>
 </header>
 

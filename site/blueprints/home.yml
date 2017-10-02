@@ -10,6 +10,9 @@ fields:
   title:
     label: Title
     type: text
+  hero_photo:
+    label: Hero Photo
+    type: image
   advertisements:
     extends: pick_many_advertisements
     limit: 3

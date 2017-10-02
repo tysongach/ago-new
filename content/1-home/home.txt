@@ -6,3 +6,11 @@ Advertisements:
 
 - 
   advertisement: test-advertisement
+- 
+  advertisement: test-advertisement
+- 
+  advertisement: test-advertisement
+
+----
+
+Hero-photo: home-hero.jpg
