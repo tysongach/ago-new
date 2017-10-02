@@ -13,7 +13,7 @@ gulp.task("serve", ["sass"], function() {
     });
   });
 
-  gulp.watch("assets/stylesheets/*.scss", ["sass"]);
+  gulp.watch("assets/stylesheets/**/*.scss", ["sass"]);
   gulp.watch("**/*.php").on("change", function () {
     browserSync.reload();
   });
