@@ -1,4 +1,4 @@
-<? if($page->not("registration")): ?>
+<? if($page != "registration"): ?>
   <section class="p-section c-cta-section">
     <div class="c-cta-section__text">
       <?= $pages->find("registration")->cta_text()->kirbytext() ?>
