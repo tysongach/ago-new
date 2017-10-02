@@ -1,0 +1,16 @@
+.c-site-nav {
+  @include padding($space-large null);
+
+  [aria-current]:not([aria-current="false"]) {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.c-site-nav__link {
+  display: inline-block;
+  text-decoration: none;
+
+  &:not(:first-of-type) {
+    margin-left: $space-large;
+  }
+}

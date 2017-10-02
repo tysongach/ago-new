@@ -1,6 +1,8 @@
 <? snippet("layout-top") ?>
 
-<h1><?= $page->title() ?></h1>
+<header>
+  <h1><?= $page->title() ?></h1>
+</header>
 
 <a href="<?= $page->parent()->url() ?>">
   &larr; Back to all <?= $page->parent()->title() ?>

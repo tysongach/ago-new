@@ -1,6 +1,8 @@
-<nav role="navigation">
+<nav class="c-site-nav" role="navigation">
   <? foreach($pages->visible() as $p): ?>
-    <a href="<?= $p->url() ?>"<? ecco($p->isOpen(), ' aria-current="page"') ?>>
+    <a class="c-site-nav__link"
+       href="<?= $p->url() ?>"
+       <? ecco($p->isOpen(), ' aria-current="page"') ?>>
       <?= $p->title() ?>
     </a>
   <? endforeach ?>

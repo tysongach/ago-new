@@ -1,0 +1,55 @@
+$_button-font-size: modular-scale(0);
+$_button-border-radius: $_button-font-size * 10;
+
+$_button-default-background-color: transparent;
+$_button-default-background-color-hover: transparent;
+$_button-default-border-color: $ago-yellow;
+$_button-default-border-color-hover: transparentize($ago-yellow, 0.5);
+$_button-default-text-color: $ago-yellow;
+$_button-default-text-color-hover: $ago-yellow;
+
+.c-button {
+  appearance: none;
+  background-color: $_button-default-background-color;
+  border: 1px solid $_button-default-border-color;
+  border-radius: $_button-border-radius;
+  color: $_button-default-text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-family-default;
+  font-size: $_button-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $font-weight-bold;
+  line-height: 2;
+  padding: 0 modular-scale(1);
+  text-align: center;
+  text-decoration: none;
+  transition:
+    background-color $animation-duration-default $animation-timing-default,
+    border-color $animation-duration-default $animation-timing-default,
+    color $animation-duration-default $animation-timing-default;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $_button-default-background-color-hover;
+    border-color: $_button-default-border-color-hover;
+    color: $_button-default-text-color-hover;
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $_button-default-background-color;
+      border-color: $_button-default-border-color;
+    }
+  }
+}

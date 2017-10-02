@@ -10,4 +10,6 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
-    <? snippet("site-navigation") ?>
+    <div class="p-container">
+      <? snippet("site-navigation") ?>
+        <main role="main">

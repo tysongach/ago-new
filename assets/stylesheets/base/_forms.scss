@@ -1,0 +1,91 @@
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: $font-weight-bold;
+  margin-bottom: $space-x-small;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: $font-weight-bold;
+  margin-bottom: $space-xx-small;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: $font-family-default;
+  font-size: modular-scale(0);
+}
+
+#{$all-text-inputs} {
+  appearance: none;
+  background-color: $white;
+  border: 1px solid $color-border-default;
+  border-radius: $border-radius-default;
+  box-sizing: border-box;
+  line-height: 2;
+  margin: 0;
+  padding: 0 modular-scale(-4);
+  transition: border-color $animation-duration-default $animation-timing-default;
+  width: 100%;
+
+  &:hover {
+    border-color: shade($color-border-default, 20%);
+  }
+
+  &:focus {
+    border-color: $ago-yellow;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($white, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: 1px solid $color-border-default;
+    }
+  }
+
+  &::placeholder {
+    color: $medium-gray;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $space-small;
+}
+
+[type="file"] {
+  margin: 0;
+  width: 100%;
+}
+
+select {
+  margin: 0;
+  width: 100%;
+}
+
+[type="checkbox"],
+[type="radio"],
+[type="file"],
+select {
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}

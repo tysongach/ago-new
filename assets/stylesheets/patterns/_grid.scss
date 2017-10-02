@@ -1,0 +1,11 @@
+$_gutter-width: 2rem;
+
+.p-grid {
+  @include clearfix;
+  margin-left: -$_gutter-width;
+}
+
+.p-grid__item {
+  float: left;
+  padding-left: $_gutter-width;
+}

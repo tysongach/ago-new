@@ -1,0 +1,73 @@
+html {
+  color: $color-text-default;
+  font-family: $font-family-default;
+  font-size: 100%;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-body;
+
+  @media (min-width: 38em) {
+    font-size: 106.25%;
+  }
+
+  @media (min-width: 65em) {
+    font-size: 112.5%;
+  }
+
+  @media (min-width: 100em) {
+    font-size: 118.75%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-text-heading;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  margin: 0;
+}
+
+h2 {
+  color: $ago-yellow;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: $color-text-link;
+  text-decoration-skip: ink;
+
+  &:hover {
+    color: $color-text-link-hover;
+    transition: color $animation-duration-default $animation-timing-default;
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+dt {
+  color: $color-text-heading;
+  font-weight: $font-weight-bold;
+}
+
+hr {
+  border-bottom: 1px solid $color-border-default;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $space-medium 0;
+}

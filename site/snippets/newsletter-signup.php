@@ -53,5 +53,5 @@
            value="">
   </div>
 
-  <button name="subscribe" type="submit">Subscribe</button>
+  <button disabled class="c-button" name="subscribe" type="submit">Subscribe</button>
 </form>

@@ -1,22 +1,30 @@
 <? snippet("layout-top") ?>
 
-<h1><?= $page->title() ?></h1>
+<header>
+  <h1><?= $page->title() ?></h1>
+</header>
 
-<? snippet("programming-navigation") ?>
+<div class="p-grid">
+  <div class="p-grid__item u-1/4">
+    <? snippet("programming-navigation") ?>
+  </div>
 
-<hr>
-
-<nav role="navigation">
-  <? foreach($page->children()->visible() as $subpage): ?>
-    <a href="<?= $subpage->url() ?>">
-      <?= $subpage->title() ?>
-    </a>
-  <? endforeach ?>
-</nav>
+  <div class="p-grid__item u-3/4">
+    <ul class="p-grid u-list-bare">
+      <? foreach($page->children()->visible() as $subpage): ?>
+        <li class="p-grid__item u-1/2">
+          <a href="<?= $subpage->url() ?>">
+            <img src="http://fillmurray.com/800/400">
+            <?= $subpage->title() ?>
+          </a>
+        </li>
+      <? endforeach ?>
+    </ul>
+  </div>
+</div>
 
 <? if($page->advertisement()->isNotEmpty()): ?>
   <? $ad = $pages->find("advertisements")->find($page->advertisement()) ?>
-  <hr>
   <? snippet("advertisement", array("ad" => $ad)) ?>
 <? endif ?>
 

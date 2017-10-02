@@ -1,12 +1,13 @@
-<? if($page != "registration"): ?>
-  <hr>
+<? if($page->not("registration")): ?>
+  <section class="p-section c-cta-section">
+    <div class="c-cta-section__text">
+      <?= $pages->find("registration")->cta_text()->kirbytext() ?>
+    </div>
 
-  <aside>
-    <?= $pages->find("registration")->cta_text()->kirbytext() ?>
-
-    <a href="<?= $pages->find("registration")->cvent_registration_url() ?>"
+    <a class="c-button"
+       href="<?= $pages->find("registration")->cvent_registration_url() ?>"
        target="_blank">
       Register
     </a>
-  </aside>
+  </section>
 <? endif ?>
