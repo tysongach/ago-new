@@ -6,6 +6,8 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><?= $site->title()->html() ?> - <?= $page->title()->html() ?></title>
     <?= css("assets/stylesheets/main.css") ?>
+    <script src="https://use.typekit.net/mai5joe.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <? snippet("site-navigation") ?>
