@@ -39,6 +39,10 @@
 </header>
 
 <section class="p-section">
+  <h2 class="p-section__heading">
+    The AGO National Convention
+  </h2>
+
   <?= $pages->find("about")->story()->kirbytext() ?>
 </section>
 
