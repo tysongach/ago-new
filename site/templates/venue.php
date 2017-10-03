@@ -16,6 +16,8 @@
 
 <div class="p-grid">
   <div class="p-grid__item u-1/2">
+    <?= $page->text()->kirbytext() ?>
+
     <address>
       <?= $page->street() ?><br>
       <?= $page->city() ?>, <?= $page->state() ?> <?= $page->zip() ?>
