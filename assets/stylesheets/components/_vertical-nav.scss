@@ -18,7 +18,11 @@
   display: block;
   font-size: modular-scale(1);
   font-variant-caps: all-small-caps;
-  font-weight: $font-weight-semibold;
   margin-bottom: $space-xx-small;
   text-decoration: none;
+
+  &[aria-current]:not([aria-current="false"]) {
+    color: $ago-yellow;
+    font-weight: $font-weight-bold;
+  }
 }
