@@ -1,0 +1,20 @@
+.c-back-link {
+  font-family: $font-family-sans-serif;
+  line-height: 1;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    .c-back-link__arrow {
+      transform: translateX(-$space-xx-small);
+    }
+  }
+}
+
+.c-back-link__arrow {
+  display: inline-block;
+  margin-right: $space-xx-small;
+  transition: transform $animation-duration-default $animation-timing-default;
+}
