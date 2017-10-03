@@ -4,8 +4,11 @@
 
 .c-advertisement__link {
   display: inline-block;
+  text-decoration: none;
 }
 
 .c-advertisement__text {
+  font-family: $font-family-sans-serif;
   font-size: modular-scale(-1);
+  hyphens: auto;
 }

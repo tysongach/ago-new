@@ -37,9 +37,8 @@
             <?= $event->date("g:ia", "end_time") ?>
           </td>
           <td>
-            <a href="<?= $event->url() ?>">
-              <?= $event->title() ?>
-            </a><br>
+            <?= $event->title() ?>
+            <br>
             <?# $venues = $pages->find("programming")->children()->find("venues") ?>
             <?# $venue = $venues->find($event->venue()) ?>
             <?= $event->venue() ?>
