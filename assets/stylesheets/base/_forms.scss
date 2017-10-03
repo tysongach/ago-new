@@ -37,15 +37,6 @@ textarea {
   transition: border-color $animation-duration-default $animation-timing-default;
   width: 100%;
 
-  &:hover {
-    border-color: shade($color-border-default, 20%);
-  }
-
-  &:focus {
-    border-color: $ago-yellow;
-    outline: none;
-  }
-
   &:disabled {
     background-color: shade($white, 5%);
     cursor: not-allowed;
@@ -80,6 +71,7 @@ select {
   width: 100%;
 }
 
+#{$all-text-inputs},
 [type="checkbox"],
 [type="radio"],
 [type="file"],
