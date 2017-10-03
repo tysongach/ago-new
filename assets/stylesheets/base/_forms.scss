@@ -28,8 +28,8 @@ textarea {
 #{$all-text-inputs} {
   appearance: none;
   background-color: $white;
-  border: 1px solid $color-border-default;
-  border-radius: $border-radius-default;
+  border: 0;
+  border-radius: $border-radius-large;
   box-sizing: border-box;
   line-height: 2;
   margin: 0 0 $space-small;

@@ -74,10 +74,14 @@
   </div>
 </section>
 
-<section hidden>
-  <h2>
+<section class="p-section">
+  <h2 class="p-section__heading">
     Stay Updated
   </h2>
+
+  <p>
+    Join our mailing list to get the latest news and announcements in your inbox.
+  </p>
 
   <? snippet("newsletter-signup") ?>
 </section>

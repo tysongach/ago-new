@@ -4,46 +4,60 @@
       target="_blank">
 
   <fieldset>
-    <legend>Full Name</legend>
+    <legend class="u-hide-visually">
+      Full Name
+    </legend>
 
-    <div>
-      <label for="mce-FIRST_NAME">First Name</label>
-      <input id="mce-FIRST_NAME"
-             name="FIRST_NAME"
-             type="text"
-             placeholder="First Name"
-             autocomplete="given-name"
-             required>
-    </div>
+    <div class="p-grid">
+      <div class="p-grid__item u-1/2">
+        <label class="u-hide-visually" for="mce-FIRST_NAME">
+          First Name
+        </label>
+        <input id="mce-FIRST_NAME"
+               name="FIRST_NAME"
+               type="text"
+               placeholder="First Name"
+               autocomplete="given-name"
+               required>
+      </div>
 
-    <div>
-      <label for="mce-LAST_NAME">Last Name</label>
-      <input id="mce-LAST_NAME"
-             name="LAST_NAME"
-             type="text"
-             placeholder="Last Name"
-             autocomplete="family-name"
-             required>
+      <div class="p-grid__item u-1/2">
+        <label class="u-hide-visually" for="mce-LAST_NAME">
+          Last Name
+        </label>
+        <input id="mce-LAST_NAME"
+               name="LAST_NAME"
+               type="text"
+               placeholder="Last Name"
+               autocomplete="family-name"
+               required>
+      </div>
     </div>
   </fieldset>
 
-  <div>
-    <label for="mce-EMAIL">Email Address</label>
-    <input id="mce-EMAIL"
-           name="EMAIL"
-           type="email"
-           placeholder="Email Address"
-           autocomplete="email"
-           required>
-  </div>
+  <div class="p-grid">
+    <div class="p-grid__item u-1/2">
+      <label class="u-hide-visually" for="mce-EMAIL">
+        Email Address
+      </label>
+      <input id="mce-EMAIL"
+             name="EMAIL"
+             type="email"
+             placeholder="Email Address"
+             autocomplete="email"
+             required>
+    </div>
 
-  <div>
-    <label for="mce-ZIP_CODE">Zip Code</label>
-    <input id="mce-ZIP_CODE"
-           name="ZIP_CODE"
-           type="text"
-           placeholder="Zip Code"
-           autocomplete="postal-code">
+    <div class="p-grid__item u-1/2">
+      <label class="u-hide-visually" for="mce-ZIP_CODE">
+        Zip Code
+      </label>
+      <input id="mce-ZIP_CODE"
+             name="ZIP_CODE"
+             type="text"
+             placeholder="Zip Code"
+             autocomplete="postal-code">
+    </div>
   </div>
 
   <div style="position: absolute; left: -5000px;" aria-hidden="true">
