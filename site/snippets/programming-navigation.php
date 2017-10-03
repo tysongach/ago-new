@@ -1,4 +1,4 @@
-<nav role="navigation">
+<nav aria-label="Programming" role="navigation">
   <? foreach($page->siblings()->visible() as $sibling): ?>
     <a href="<?= $sibling->url() ?>"
        <? ecco($sibling->isOpen(), ' aria-current="page"') ?>>
