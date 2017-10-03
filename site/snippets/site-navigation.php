@@ -6,4 +6,6 @@
       <?= $p->title() ?>
     </a>
   <? endforeach ?>
+
+  <? snippet("ago-kc-2018-logo") ?>
 </nav>

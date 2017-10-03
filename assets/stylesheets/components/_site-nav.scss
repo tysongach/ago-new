@@ -1,5 +1,7 @@
 .c-site-nav {
   @include padding($space-large null);
+  align-items: center;
+  display: flex;
 
   [aria-current]:not([aria-current="false"]) {
     font-weight: $font-weight-bold;
@@ -13,4 +15,9 @@
   &:not(:first-of-type) {
     margin-left: $space-medium;
   }
+}
+
+.c-site-nav__logo {
+  margin-left: auto;
+  max-width: 8rem;
 }
