@@ -6,5 +6,8 @@ fields:
     type: text
   date_and_time:
     extends: start_end_datetime
+  text:
+    label: About the Worship
+    type: textarea
   venue:
     extends: venue
