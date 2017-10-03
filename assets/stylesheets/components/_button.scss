@@ -18,7 +18,6 @@ $_button-default-text-color-hover: $ago-yellow;
   display: inline-block;
   font-family: $font-family-default;
   font-size: $_button-font-size;
-  -webkit-font-smoothing: antialiased;
   font-weight: $font-weight-bold;
   line-height: 2;
   padding: 0 modular-scale(1);
