@@ -8,6 +8,7 @@ files:
   height: 320
 options:
   preview: false
+  status: false
   url: false
 fields:
   title:
@@ -17,15 +18,18 @@ fields:
   art:
     label: Art
     type: image
+    required: true
   text:
     label: Text
     type: textarea
     buttons: false
+    required: true
     validate:
       maxLength: 90
   destination_url:
     label: Destination URL
     type: url
+    required: true
     help: >
       We automatically add standard campaign parameters to the URL for tracking
       through Web analytics.
