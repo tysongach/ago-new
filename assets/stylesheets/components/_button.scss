@@ -1,4 +1,5 @@
 $_button-font-size: modular-scale(0);
+$_button-large-font-size: modular-scale(1);
 $_button-border-radius: $_button-font-size * 10;
 
 $_button-default-background-color: transparent;
@@ -18,11 +19,13 @@ $_button-default-text-color-hover: $ago-yellow;
   display: inline-block;
   font-family: $font-family-default;
   font-size: $_button-font-size;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semibold;
+  letter-spacing: 2px;
   line-height: 2;
-  padding: 0 modular-scale(1);
+  padding: modular-scale(-10) modular-scale(3);
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition:
     background-color $animation-duration-default $animation-timing-default,
     border-color $animation-duration-default $animation-timing-default,
@@ -54,6 +57,5 @@ $_button-default-text-color-hover: $ago-yellow;
 }
 
 .c-button--large {
-  @include padding(null modular-scale(2));
-  font-size: $_button-font-size * 1.2;
+  font-size: $_button-large-font-size;
 }
