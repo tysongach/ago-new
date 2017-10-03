@@ -1,7 +1,27 @@
+.u-text-regular {
+  font-weight: $font-weight-regular !important;
+}
+
 .u-text-bold {
   font-weight: $font-weight-bold !important;
 }
 
+.u-text-black {
+  font-weight: $font-weight-black !important;
+}
+
+.u-text-italic {
+  font-style: italic !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
 .u-text-center {
   text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
 }
