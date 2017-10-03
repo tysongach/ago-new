@@ -1,0 +1,6 @@
+label: Venue
+type: select
+options: query
+query:
+  page: ../../venues
+  fetch: visibleChildren

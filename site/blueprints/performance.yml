@@ -7,12 +7,7 @@ fields:
   date_and_time:
     extends: start_end_datetime
   venue:
-    label: Venue
-    type: select
-    options: query
-    query:
-      page: ../../venues
-      fetch: visibleChildren
+    extends: venue
   performers:
     label: Performers
     type: structure
