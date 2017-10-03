@@ -1,7 +1,7 @@
 <? snippet("layout-top") ?>
 
 <header class="p-grid p-section">
-  <div class="p-grid__item u-1/4">
+  <div class="p-grid__item u-1/3">
     <h1>
       <?= $page_title ?>
     </h1>
@@ -19,7 +19,7 @@
     <span><?= $site->event_location() ?></span>
   </div>
 
-  <div class="p-grid__item u-3/4">
+  <div class="p-grid__item u-2/3">
     <? if($photo = $page->hero_photo()->toFile()): ?>
       <img src="<?= $photo->url() ?>"
            alt="">
