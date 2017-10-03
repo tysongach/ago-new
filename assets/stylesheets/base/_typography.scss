@@ -5,16 +5,24 @@ html {
   font-weight: $font-weight-regular;
   line-height: $line-height-body;
 
-  @media (min-width: 38em) {
+  @media (min-width: 40em) {
     font-size: 106.25%;
   }
 
-  @media (min-width: 65em) {
+  @media (min-width: 50em) {
     font-size: 112.5%;
   }
 
-  @media (min-width: 100em) {
+  @media (min-width: 60em) {
     font-size: 118.75%;
+  }
+
+  @media (min-width: 80em) {
+    font-size: 125%;
+  }
+
+  @media (min-width: 100em) {
+    font-size: 137.5%;
   }
 }
 
@@ -29,18 +37,21 @@ h6 {
   font-variant-numeric: lining-nums;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
-  margin: 0;
+  margin: 0 0 modular-scale(-6);
 }
 
 h1 {
   font-family: $font-family-serif;
-  font-size: modular-scale(6);
+  font-size: modular-scale(8);
   font-style: italic;
   font-weight: $font-weight-black;
+
+  @media (min-width: 60em) {
+    font-size: modular-scale(9);
+  }
 }
 
 h2 {
-  color: $ago-yellow;
   font-size: modular-scale(4);
 }
 
@@ -56,6 +67,10 @@ h6 {
 
 p {
   margin: 0;
+
+  & + & {
+    margin-top: modular-scale(-6);
+  }
 }
 
 a {

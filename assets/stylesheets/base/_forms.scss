@@ -32,9 +32,10 @@ textarea {
   border-radius: $border-radius-default;
   box-sizing: border-box;
   line-height: 2;
-  margin: 0;
-  padding: 0 modular-scale(-4);
-  transition: border-color $animation-duration-default $animation-timing-default;
+  margin: 0 0 $space-small;
+  padding: modular-scale(-16) modular-scale(-3);
+  transition:
+    border-color $animation-duration-default $animation-timing-default;
   width: 100%;
 
   &:disabled {

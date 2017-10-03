@@ -22,7 +22,7 @@
       <?= $site->event_location() ?>
     </p>
 
-    <a class="c-button c-button--large"
+    <a class="c-button c-button--large c-hero__cta"
        href="<?= $pages->find("registration")->cvent_registration_url() ?>"
        target="_blank"
        rel="noopener">
@@ -43,8 +43,8 @@
 </section>
 
 <section class="p-section">
-  <h2>
-    Featuring Performances By
+  <h2 class="p-section__heading">
+    Featured Performances
   </h2>
 
   <ul class="p-grid u-list-bare">

@@ -1,4 +1,4 @@
-$_button-font-size: modular-scale(0);
+$_button-font-size: modular-scale(-2);
 $_button-large-font-size: modular-scale(1);
 $_button-border-radius: $_button-font-size * 10;
 
@@ -22,7 +22,7 @@ $_button-default-text-color-hover: $ago-yellow;
   font-weight: $font-weight-semibold;
   letter-spacing: 2px;
   line-height: 2;
-  padding: modular-scale(-10) modular-scale(3);
+  padding: modular-scale(-20) modular-scale(3);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;

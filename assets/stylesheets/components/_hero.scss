@@ -5,6 +5,7 @@
 }
 
 .c-hero__heading {
+  @include margin(0 null $space-x-small);
   line-height: 1;
 
   &::first-line {
@@ -21,13 +22,18 @@
 .c-hero__event-date {
   color: $ago-yellow;
   font-family: $font-family-sans-serif;
-  font-size: modular-scale(3);
+  font-size: modular-scale(2);
   font-weight: $font-weight-bold;
   line-height: 1;
+  margin-top: $space-x-small;
 }
 
 .c-hero__event-location {
-  font-size: modular-scale(3);
+  @include margin(0 null auto);
+  font-size: modular-scale(2);
   font-style: italic;
-  margin-bottom: auto;
+}
+
+.c-hero__cta {
+  margin-top: $space-x-small;
 }

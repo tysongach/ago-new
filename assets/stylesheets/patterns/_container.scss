@@ -1,5 +1,5 @@
 .p-container {
   @include margin(null auto);
   @include padding(null $space-medium 15vh);
-  max-width: 58rem;
+  max-width: 54rem;
 }
