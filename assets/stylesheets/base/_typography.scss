@@ -61,10 +61,10 @@ p {
 a {
   color: $color-text-link;
   text-decoration-skip: ink;
+  transition: color $animation-duration-default $animation-timing-default;
 
   &:hover {
     color: $color-text-link-hover;
-    transition: color $animation-duration-default $animation-timing-default;
   }
 
   &:focus {
