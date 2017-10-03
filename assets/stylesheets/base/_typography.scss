@@ -26,13 +26,32 @@ h5,
 h6 {
   color: $color-text-heading;
   font-family: $font-family-heading;
+  font-variant-numeric: lining-nums;
   font-weight: $font-weight-bold;
   line-height: $line-height-heading;
   margin: 0;
 }
 
+h1 {
+  font-family: $font-family-heading-alt;
+  font-size: modular-scale(6);
+  font-style: italic;
+  font-weight: $font-weight-black;
+}
+
 h2 {
   color: $ago-yellow;
+  font-size: modular-scale(4);
+}
+
+h3 {
+  font-size: modular-scale(2);
+}
+
+h4,
+h5,
+h6 {
+  font-size: modular-scale(1);
 }
 
 p {
