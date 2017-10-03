@@ -2,7 +2,9 @@
 
 <header class="p-grid p-section">
   <div class="p-grid__item u-1/4">
-    <h1><?= $site->title() ?></h1>
+    <h1>
+      <?= $page_title ?>
+    </h1>
 
     <time datetime="<?= $site->date("Y-m-d", "event_start_date") ?>">
       <?= $site->date("F j", "event_start_date") ?>
