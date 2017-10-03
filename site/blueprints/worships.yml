@@ -2,6 +2,7 @@ title: Worships
 pages:
   num: date
   sort: date asc time asc
+  template: worship
 files: false
 options:
   template: false
