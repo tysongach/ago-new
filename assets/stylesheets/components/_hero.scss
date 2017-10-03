@@ -1,0 +1,33 @@
+.c-hero__details {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-hero__heading {
+  line-height: 1;
+
+  &::first-line {
+    font-weight: $font-weight-regular;
+  }
+}
+
+.c-hero__line {
+  @include margin(auto null);
+  border-bottom: 2px solid $ago-orange;
+  width: 20%;
+}
+
+.c-hero__event-date {
+  color: $ago-yellow;
+  font-size: modular-scale(3);
+  font-weight: $font-weight-bold;
+  line-height: 1;
+}
+
+.c-hero__event-location {
+  font-family: $font-family-heading-alt;
+  font-size: modular-scale(3);
+  font-style: italic;
+  margin-bottom: auto;
+}

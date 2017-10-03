@@ -1,27 +1,38 @@
 <? snippet("layout-top") ?>
 
-<header class="p-grid p-section">
-  <div class="p-grid__item u-1/3">
-    <h1>
+<header class="p-grid p-section c-hero">
+  <div class="p-grid__item c-hero__details u-1/3">
+    <h1 class="c-hero__heading">
       <?= $page_title ?>
     </h1>
 
-    <time datetime="<?= $site->date("Y-m-d", "event_start_date") ?>">
-      <?= $site->date("F j", "event_start_date") ?>
-    </time>
-    <span>&ndash;</span>
-    <time datetime="<?= $site->date("Y-m-d", "event_end_date") ?>">
-      <?= $site->date("j, Y", "event_end_date") ?>
-    </time>
+    <hr class="c-hero__line">
 
-    <br>
+    <div class="c-hero__event-date">
+      <time datetime="<?= $site->date("Y-m-d", "event_start_date") ?>">
+        <?= $site->date("F j", "event_start_date") ?>
+      </time>
+      <span>&ndash;</span>
+      <time datetime="<?= $site->date("Y-m-d", "event_end_date") ?>">
+        <?= $site->date("j, Y", "event_end_date") ?>
+      </time>
+    </div>
 
-    <span><?= $site->event_location() ?></span>
+    <p class="c-hero__event-location">
+      <?= $site->event_location() ?>
+    </p>
+
+    <a class="c-button c-button--large"
+       href="<?= $pages->find("registration")->cvent_registration_url() ?>"
+       target="_blank"
+       rel="noopener">
+      Register
+    </a>
   </div>
 
-  <div class="p-grid__item u-2/3">
+  <div class="p-grid__item u-2/3 u-line-height-0">
     <? if($photo = $page->hero_photo()->toFile()): ?>
-      <img src="<?= $photo->url() ?>"
+      <img src="<?= $photo->crop(800, 500)->url() ?>"
            alt="">
     <? endif ?>
   </div>

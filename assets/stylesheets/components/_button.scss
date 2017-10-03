@@ -52,3 +52,8 @@ $_button-default-text-color-hover: $ago-yellow;
     }
   }
 }
+
+.c-button--large {
+  @include padding(null modular-scale(2));
+  font-size: $_button-font-size * 1.2;
+}
