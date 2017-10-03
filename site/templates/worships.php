@@ -27,7 +27,6 @@
 
 <? if($page->advertisement()->isNotEmpty()): ?>
   <? $ad = $pages->find("advertisements")->find($page->advertisement()) ?>
-  <hr>
   <? snippet("advertisement", array("ad" => $ad)) ?>
 <? endif ?>
 

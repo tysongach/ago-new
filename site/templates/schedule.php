@@ -14,7 +14,7 @@
         Event
       </th>
       <th class="c-schedule__column-heading" scope="col">
-        Performers
+        Featuring
       </th>
     </tr>
   </thead>
