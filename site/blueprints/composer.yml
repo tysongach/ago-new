@@ -4,14 +4,6 @@ fields:
   title:
     label: Full Name
     type: text
-  job_title:
-    label: Title
-    type: text
-    placeholder: e.g. Organist
-  workplace:
-    label: Workplace
-    type: text
-    placeholder: e.g. St. Thomas Church
   location:
     label: Location
     type: text

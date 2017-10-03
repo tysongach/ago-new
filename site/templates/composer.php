@@ -17,8 +17,6 @@
 
 <div class="p-grid">
   <div class="p-grid__item u-1/2">
-    <p><?= $page->job_title() ?></p>
-    <p><?= $page->workplace() ?></p>
     <p><?= $page->location() ?></p>
     <p><?= $page->bio() ?></p>
 
