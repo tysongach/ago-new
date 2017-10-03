@@ -4,10 +4,21 @@ fields:
   title:
     label: Title
     type: text
-  location:
-    label: Location
+  street:
+    label: Street
     type: text
-    placeholder: e.g. New York, New York
-  website:
+  city:
+    label: City
+    type: text
+    width: 1/3
+  state:
+    label: State
+    type: text
+    width: 1/3
+  zip:
+    label: Zip
+    type: text
+    width: 1/3
+  chapter_page:
     label: Chapter Page URL
     type: url
