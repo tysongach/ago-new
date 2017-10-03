@@ -12,10 +12,12 @@
   <div class="p-grid__item u-3/4">
     <ul class="p-grid u-list-bare">
       <? foreach($page->children()->visible() as $subpage): ?>
-        <li class="p-grid__item u-1/2">
-          <a href="<?= $subpage->url() ?>">
-            <img src="http://fillmurray.com/600/300">
-            <?= $subpage->title() ?>
+        <li class="p-grid__item c-card u-1/2">
+          <a class="c-card__link" href="<?= $subpage->url() ?>">
+            <img src="http://fillmurray.com/800/400">
+            <p class="c-card__title">
+              <?= $subpage->title() ?>
+            </p>
           </a>
         </li>
       <? endforeach ?>

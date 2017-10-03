@@ -16,7 +16,8 @@
 .c-hero__line {
   @include margin(auto null);
   border-bottom: 2px solid $ago-orange;
-  width: 20%;
+  max-width: 4rem;
+  width: 25%;
 }
 
 .c-hero__event-date {

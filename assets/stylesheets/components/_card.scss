@@ -1,0 +1,29 @@
+.c-card__link {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text-default;
+  }
+}
+
+.c-card__title {
+  color: $ago-yellow;
+  font-size: modular-scale(2);
+  padding-top: $space-medium;
+  position: relative;
+
+  &::before {
+    @include size(25%, 2px);
+    background-color: $ago-orange;
+    content: "";
+    max-width: 4rem;
+    position: absolute;
+    top: $space-medium / 2;
+  }
+}
+
+.c-card__sub-title {
+  font-family: $font-family-sans-serif;
+  font-size: modular-scale(-1);
+}

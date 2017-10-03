@@ -53,10 +53,15 @@
 
   <ul class="p-grid u-list-bare">
     <? foreach($featured_performances as $featured_performance): ?>
-      <li class="p-grid__item u-1/2">
-        <a href="<?= $featured_performance->url() ?>">
+      <li class="p-grid__item c-card u-1/2">
+        <a class="c-card__link" href="<?= $featured_performance->url() ?>">
           <img src="http://fillmurray.com/800/400">
-          <?= $featured_performance->title() ?>
+          <p class="c-card__title">
+            <?= $featured_performance->title() ?>
+          </p>
+          <p class="c-card__sub-title">
+            <?= $featured_performance->venue() ?>
+          </p>
         </a>
       </li>
     <? endforeach ?>
