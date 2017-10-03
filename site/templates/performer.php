@@ -2,12 +2,18 @@
 
 <header>
   <h1><?= $page->title() ?></h1>
-</header>
 
-<? $programming = $pages->find("programming") ?>
-<a href="<?= $programming->url() ?>">
-  &larr; Back to all <?= $programming->title() ?>
-</a>
+  <nav class="c-back-link">
+    <? $programming = $pages->find("programming") ?>
+    <a href="<?= $programming->url() ?>">
+      <span class="c-back-link__arrow" aria-hidden="true">
+        &larr;
+      </span>
+
+      Back to all <?= $programming->title() ?>
+    </a>
+  </nav>
+</header>
 
 <div class="p-grid">
   <div class="p-grid__item u-1/2">
