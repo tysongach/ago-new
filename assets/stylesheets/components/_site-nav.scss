@@ -3,10 +3,6 @@
   align-items: center;
   display: flex;
   font-family: $font-family-sans-serif;
-
-  [aria-current]:not([aria-current="false"]) {
-    font-weight: $font-weight-bold;
-  }
 }
 
 .c-site-nav__link {
@@ -15,6 +11,10 @@
 
   &:not(:first-of-type) {
     margin-left: $space-medium;
+  }
+
+  &[aria-current]:not([aria-current="false"]) {
+    font-weight: $font-weight-bold;
   }
 }
 
