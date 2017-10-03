@@ -37,7 +37,9 @@
             <?= $event->date("g:ia", "end_time") ?>
           </td>
           <td>
-            <?= $event->title() ?>
+            <span class="c-schedule__event-title">
+              <?= $event->title() ?>
+            </span>
             <br>
             <?# $venues = $pages->find("programming")->children()->find("venues") ?>
             <?# $venue = $venues->find($event->venue()) ?>

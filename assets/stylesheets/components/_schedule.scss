@@ -19,3 +19,10 @@
   font-size: modular-scale(2);
   padding: $space-large $space-x-small 0 0;
 }
+
+.c-schedule__event-title {
+  font-family: $font-family-serif;
+  font-size: modular-scale(2);
+  font-style: italic;
+  font-weight: $font-weight-bold;
+}
