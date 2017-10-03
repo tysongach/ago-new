@@ -42,13 +42,9 @@ h6 {
 
 h1 {
   font-family: $font-family-serif;
-  font-size: modular-scale(8);
+  font-size: modular-scale(7);
   font-style: italic;
   font-weight: $font-weight-black;
-
-  @media (min-width: 60em) {
-    font-size: modular-scale(9);
-  }
 }
 
 h2 {

@@ -6,7 +6,12 @@
 
 .c-hero__heading {
   @include margin(0 null $space-x-small);
+  font-size: modular-scale(8);
   line-height: 1;
+
+  @media (min-width: 60em) {
+    font-size: modular-scale(9);
+  }
 
   &::first-line {
     font-weight: $font-weight-regular;
