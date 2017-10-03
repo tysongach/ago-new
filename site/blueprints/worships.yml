@@ -1,7 +1,7 @@
 title: Worships
 pages:
-  num: zero
-  template: worship
+  num: date
+  sort: date asc time asc
 files: false
 options:
   template: false

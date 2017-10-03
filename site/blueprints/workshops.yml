@@ -1,6 +1,7 @@
 title: Workshops
 pages:
-  num: zero
+  num: date
+  sort: date asc time asc
   template: workshop
 files: false
 options:

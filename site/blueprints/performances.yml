@@ -1,8 +1,7 @@
 title: Performances
 pages:
-  num:
-    mode: date
-    field: start_date
+  num: date
+  sort: date asc time asc
   template: performance
 files: false
 options:
