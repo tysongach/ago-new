@@ -6,7 +6,8 @@
 
     <a class="c-button"
        href="<?= $pages->find("registration")->cvent_registration_url() ?>"
-       target="_blank">
+       target="_blank"
+       rel="noopener">
       Register
     </a>
   </section>
