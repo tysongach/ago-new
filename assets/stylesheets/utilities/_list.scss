@@ -1,4 +1,5 @@
 .u-list-bare {
+  @include margin(0 null);
   list-style: none;
   padding-left: 0;
 }

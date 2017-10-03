@@ -14,7 +14,7 @@
   position: relative;
 
   &::before {
-    @include size(25%, 2px);
+    @include size(50%, 2px);
     background-color: $ago-orange;
     content: "";
     max-width: 4rem;

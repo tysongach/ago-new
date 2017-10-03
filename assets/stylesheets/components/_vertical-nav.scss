@@ -1,0 +1,24 @@
+.c-vertical-nav {
+  font-family: $font-family-sans-serif;
+  margin-bottom: $space-medium;
+  padding-top: $space-medium;
+  position: relative;
+
+  &::before {
+    @include size(50%, 2px);
+    background-color: $ago-orange;
+    content: "";
+    max-width: 4rem;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.c-vertical-nav__link {
+  display: block;
+  font-size: modular-scale(1);
+  font-variant-caps: all-small-caps;
+  font-weight: $font-weight-semibold;
+  margin-bottom: $space-xx-small;
+  text-decoration: none;
+}

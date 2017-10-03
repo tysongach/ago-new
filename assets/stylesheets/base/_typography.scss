@@ -62,7 +62,7 @@ h6 {
 }
 
 p {
-  margin: 0;
+  @include margin(0 null);
 }
 
 a {
