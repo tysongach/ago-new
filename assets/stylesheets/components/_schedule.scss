@@ -1,0 +1,21 @@
+.c-schedule {
+  border-top: 2px solid $ago-orange;
+}
+
+.c-schedule__head {
+  border-bottom: 2px solid $ago-orange;
+}
+
+.c-schedule__column-heading {
+  color: $ago-yellow;
+  font-weight: $font-weight-regular;
+  letter-spacing: 1px;
+  padding: $space-medium $space-x-small $space-medium 0;
+  text-transform: uppercase;
+}
+
+.c-schedule__day-heading {
+  font-family: $font-family-heading-alt;
+  font-size: modular-scale(2);
+  padding: $space-large $space-x-small 0 0;
+}

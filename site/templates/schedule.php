@@ -4,18 +4,24 @@
   <h1><?= $page->title() ?></h1>
 </header>
 
-<table>
-  <thead>
+<table class="c-schedule">
+  <thead class="c-schedule__head">
     <tr>
-      <th scope="col">Time</th>
-      <th scope="col">Event</th>
-      <th scope="col">Performers</th>
+      <th class="c-schedule__column-heading" scope="col">
+        Time
+      </th>
+      <th class="c-schedule__column-heading" scope="col">
+        Event
+      </th>
+      <th class="c-schedule__column-heading" scope="col">
+        Performers
+      </th>
     </tr>
   </thead>
   <tbody>
     <? foreach($groupedEvents as $day => $eventsPerDay): ?>
       <tr>
-        <th colspan="3">
+        <th class="c-schedule__day-heading" colspan="3" scope="colgroup">
           <?= $day ?></h2>
         </th>
       </tr>
@@ -31,7 +37,12 @@
             <?= $event->date("g:ia", "end_time") ?>
           </td>
           <td>
-            <?= $event->title() ?>
+            <a href="<?= $event->url() ?>">
+              <?= $event->title() ?>
+            </a><br>
+            <?# $venues = $pages->find("programming")->children()->find("venues") ?>
+            <?# $venue = $venues->find($event->venue()) ?>
+            <?= $event->venue() ?>
           </td>
           <td>
             <? foreach($event->performers()->toStructure() as $performer): ?>
