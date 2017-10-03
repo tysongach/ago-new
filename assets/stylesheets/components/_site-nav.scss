@@ -2,6 +2,7 @@
   @include padding($space-large null);
   align-items: center;
   display: flex;
+  font-family: $font-family-sans-serif;
 
   [aria-current]:not([aria-current="false"]) {
     font-weight: $font-weight-bold;
