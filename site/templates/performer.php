@@ -4,8 +4,9 @@
   <h1><?= $page->title() ?></h1>
 </header>
 
-<a href="<?= $page->parent()->url() ?>">
-  &larr; Back to all <?= $page->parent()->title() ?>
+<? $programming = $pages->find("programming") ?>
+<a href="<?= $programming->url() ?>">
+  &larr; Back to all <?= $programming->title() ?>
 </a>
 
 <div class="p-grid">
