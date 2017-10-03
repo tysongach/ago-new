@@ -1,3 +1,11 @@
 .p-section {
   @include padding($space-large null);
 }
+
+.p-section--pad-bottom-only {
+  padding-top: 0;
+}
+
+.p-section--pad-top-only {
+  padding-bottom: 0;
+}

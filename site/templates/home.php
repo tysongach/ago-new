@@ -1,6 +1,6 @@
 <? snippet("layout-top") ?>
 
-<header class="p-grid p-section c-hero">
+<header class="p-grid p-section p-section--pad-bottom-only c-hero">
   <div class="p-grid__item c-hero__details u-1/3">
     <h1 class="c-hero__heading">
       <?= $page_title ?>
