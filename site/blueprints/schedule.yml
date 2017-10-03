@@ -9,3 +9,9 @@ fields:
   title:
     label: Title
     type: text
+  info:
+    label: Note
+    type: info
+    text: >
+      The schedule is generated from Programming content.
+      <a href="/panel/pages/programming/edit">Edit that content here →</a>
