@@ -1,5 +1,5 @@
-$_button-font-size: modular-scale(-2);
-$_button-large-font-size: modular-scale(1);
+$_button-font-size: modular-scale(1);
+$_button-large-font-size: modular-scale(2);
 $_button-border-radius: $_button-font-size * 10;
 
 $_button-default-background-color: transparent;
@@ -19,13 +19,13 @@ $_button-default-text-color-hover: $ago-yellow;
   display: inline-block;
   font-family: $font-family-sans-serif;
   font-size: $_button-font-size;
+  font-variant-caps: all-small-caps;
   font-weight: $font-weight-semibold;
   letter-spacing: 2px;
-  line-height: 2;
-  padding: modular-scale(-20) modular-scale(3);
+  line-height: 1;
+  padding: modular-scale(-8) modular-scale(0) modular-scale(-4);
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition:
     background-color $animation-duration-default $animation-timing-default,
     border-color $animation-duration-default $animation-timing-default,
