@@ -34,6 +34,9 @@ fields:
         query:
           page: ../../composers
           fetch: visibleChildren
+  photo:
+    label: Photo
+    type: image
   featured:
     label: Feature this performance on the home page?
     type: toggle

@@ -40,7 +40,10 @@
   </div>
 
   <div class="p-grid__item u-1/2">
-    <img src="http://fillmurray.com/800/400">
+    <? if($photo = $page->photo()->toFile()): ?>
+      <img src="<?= $photo->crop(750, 500)->url() ?>"
+           alt="<?= $page->title()->html() ?>">
+    <? endif ?>
   </div>
 </div>
 

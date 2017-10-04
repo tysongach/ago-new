@@ -11,3 +11,6 @@ fields:
     type: textarea
   venue:
     extends: venue
+  photo:
+    label: Photo
+    type: image

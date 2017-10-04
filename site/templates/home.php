@@ -32,7 +32,7 @@
 
   <div class="p-grid__item u-2/3 u-line-height-0">
     <? if($photo = $page->hero_photo()->toFile()): ?>
-      <img src="<?= $photo->crop(800, 500)->url() ?>"
+      <img src="<?= $photo->crop(750, 500)->url() ?>"
            alt="">
     <? endif ?>
   </div>
@@ -55,7 +55,9 @@
     <? foreach($featured_performances as $featured_performance): ?>
       <li class="p-grid__item c-card u-1/2">
         <a class="c-card__link" href="<?= $featured_performance->url() ?>">
-          <img src="http://fillmurray.com/800/400">
+          <? if($photo = $featured_performance->photo()->toFile()): ?>
+            <img src="<?= $photo->crop(750, 500)->url() ?>" alt="">
+          <? endif ?>
           <p class="c-card__title">
             <?= $featured_performance->title() ?>
           </p>
