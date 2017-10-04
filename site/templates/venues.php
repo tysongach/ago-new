@@ -15,7 +15,7 @@
         <li class="p-grid__item c-card u-1/2">
           <a class="c-card__link" href="<?= $subpage->url() ?>">
             <? if($photo = $subpage->photo()->toFile()): ?>
-              <img src="<?= $photo->crop(525, 350)->url() ?>" alt="">
+              <img src="<?= $photo->focusCrop(525, 350)->url() ?>" alt="">
             <? endif ?>
             <p class="c-card__title">
               <?= $subpage->title() ?>

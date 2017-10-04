@@ -41,7 +41,7 @@
 
   <div class="p-grid__item u-1/2">
     <? if($photo = $page->photo()->toFile()): ?>
-      <img src="<?= $photo->crop(750, 500)->url() ?>"
+      <img src="<?= $photo->focusCrop(750, 500)->url() ?>"
            alt="<?= $page->title()->html() ?>">
     <? endif ?>
   </div>

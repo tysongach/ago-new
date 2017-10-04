@@ -6,6 +6,12 @@ options:
   template: false
   url: false
   delete: false
+files:
+  fields:
+    focus:
+      label: Specify the focus point
+      type: focus
+      help: If this image gets cropped, it will crop towards this focus point
 fields:
   title:
     label: Title
