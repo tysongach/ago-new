@@ -1,6 +1,9 @@
 title: Performance
 pages: false
 files:
+  size: 3000000
+  width: 2000
+  height: 2000
   fields:
     focus:
       label: Specify the focus point

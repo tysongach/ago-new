@@ -1,6 +1,9 @@
 title: Performer
 pages: false
 fields:
+  size: 3000000
+  width: 2000
+  height: 2000
   title:
     label: Full Name
     type: text
