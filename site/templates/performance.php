@@ -30,9 +30,18 @@
       <? foreach($page->performers()->toStructure() as $performer): ?>
         <? $performer = $page->parent()->siblings()->find("performers")->find($performer) ?>
         <dd>
-          <a href="<?= $performer->url() ?>">
-            <?= $performer->title() ?>
-          </a>
+          <?= $performer ?>
+        </dd>
+      <? endforeach ?>
+    </dl>
+
+    <dl>
+      <dt>Composers:</dt>
+
+      <? foreach($page->composers()->toStructure() as $composer): ?>
+        <? $composer = $page->parent()->siblings()->find("composers")->find($composer) ?>
+        <dd>
+          <?= $composer ?>
         </dd>
       <? endforeach ?>
     </dl>

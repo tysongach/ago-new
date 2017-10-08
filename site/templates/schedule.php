@@ -46,13 +46,13 @@
             <?= $event->venue() ?>
           </td>
           <td>
-            <? foreach($event->performers()->toStructure() as $performer): ?>
-              <? $performers = $pages->find("programming")->children()->find("performers") ?>
-              <? $performer = $performers->find($performer) ?>
-              <a href="<?= $performer->url() ?>">
-                <?= $performer->title() ?>
+            <?# foreach($event->performers()->toStructure() as $performer): ?>
+              <?# $performers = $pages->find("programming")->children()->find("performers") ?>
+              <?# $performer = $performers->find($performer) ?>
+              <a href="<?# $performer->url() ?>">
+                <?# $performer->title() ?>
               </a>
-            <? endforeach ?>
+            <?# endforeach ?>
           </td>
         </tr>
       <? endforeach; ?>
