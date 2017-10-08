@@ -33,7 +33,6 @@
           <a href="<?= $performer->url() ?>">
             <?= $performer->title() ?>
           </a>
-          <p><?= $performer->bio() ?></p>
         </dd>
       <? endforeach ?>
     </dl>
