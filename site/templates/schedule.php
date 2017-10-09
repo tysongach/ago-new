@@ -42,7 +42,9 @@
             </span>
             <br>
             <? if($venue = $pages->find("programming")->children()->find("venues")->find($event->venue())): ?>
-              <?= $venue->title() ?>
+              <a href="<?= $venue->url() ?>">
+                <?= $venue->title() ?>
+              </a>
             <? endif ?>
           </td>
           <td>
