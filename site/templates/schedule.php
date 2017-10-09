@@ -41,18 +41,18 @@
               <?= $event->title() ?>
             </span>
             <br>
-            <?# $venues = $pages->find("programming")->children()->find("venues") ?>
-            <?# $venue = $venues->find($event->venue()) ?>
-            <?= $event->venue() ?>
+            <? if($venue = $pages->find("programming")->children()->find("venues")->find($event->venue())): ?>
+              <?= $venue->title() ?>
+            <? endif ?>
           </td>
           <td>
-            <?# foreach($event->performers()->toStructure() as $performer): ?>
-              <?# $performers = $pages->find("programming")->children()->find("performers") ?>
-              <?# $performer = $performers->find($performer) ?>
-              <a href="<?# $performer->url() ?>">
-                <?# $performer->title() ?>
-              </a>
-            <?# endforeach ?>
+            <? foreach($event->performers()->toStructure() as $performer): ?>
+              <? $performers = $pages->find("programming")->children()->find("performers") ?>
+              <? $performer = $performers->find($performer) ?>
+              <a href="<?= $performer->url() ?>">
+                <?= $performer->title() ?>
+              </a><br>
+            <? endforeach ?>
           </td>
         </tr>
       <? endforeach; ?>

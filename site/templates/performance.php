@@ -21,30 +21,49 @@
         <?= $page->date("l, F j") ?><br>
         <?= $page->date("g:i", "time") ?>&thinsp;&ndash;&thinsp;<?= $page->date("g:ia", "end_time") ?>
       </li>
-      <li><?= $page->venue() ?></li>
+
+      <? if($page->venue()->isNotEmpty()): ?>
+        <li>
+          <? if($venue = $pages->find("programming")->children()->find("venues")->find($page->venue())): ?>
+            <a href="<?= $venue->url() ?>">
+              <?= $venue->title() ?>
+            </a>
+          <? endif ?>
+        </li>
+      <? endif ?>
     </ul>
 
-    <dl>
-      <dt>Performers:</dt>
+    <? if($page->performers()->isNotEmpty()): ?>
+      <dl>
+        <dt>Performers:</dt>
 
-      <? foreach($page->performers()->toStructure() as $performer): ?>
-        <? $performer = $page->parent()->siblings()->find("performers")->find($performer) ?>
-        <dd>
-          <?= $performer ?>
-        </dd>
-      <? endforeach ?>
-    </dl>
+        <? foreach($page->performers()->toStructure() as $performer): ?>
+          <? if($performer = $page->parent()->siblings()->find("performers")->find($performer)): ?>
+            <dd>
+              <a href="<?= $performer->url() ?>">
+                <?= $performer->title() ?>
+              </a>
+            </dd>
+          <? endif ?>
+        <? endforeach ?>
+      </dl>
+    <? endif ?>
 
-    <dl>
-      <dt>Composers:</dt>
+    <? if($page->composers()->isNotEmpty()): ?>
+      <dl>
+        <dt>Composers:</dt>
 
-      <? foreach($page->composers()->toStructure() as $composer): ?>
-        <? $composer = $page->parent()->siblings()->find("composers")->find($composer) ?>
-        <dd>
-          <?= $composer ?>
-        </dd>
-      <? endforeach ?>
-    </dl>
+        <? foreach($page->composers()->toStructure() as $composer): ?>
+          <? if($composer = $page->parent()->siblings()->find("composers")->find($composer)): ?>
+            <dd>
+              <a href="<?= $composer->url() ?>">
+                <?= $composer->title() ?>
+              </a>
+            </dd>
+          <? endif ?>
+        <? endforeach ?>
+      </dl>
+    <? endif ?>
   </div>
 
   <div class="p-grid__item u-1/2">
