@@ -18,7 +18,7 @@
 <div class="p-grid">
   <div class="p-grid__item u-1/2">
     <p><?= $page->location() ?></p>
-    <p><?= $page->bio() ?></p>
+    <p><?= $page->bio()->kirbytext() ?></p>
 
     <ul>
       <? foreach($page->links()->toStructure() as $link): ?>
