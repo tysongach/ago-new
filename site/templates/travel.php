@@ -4,6 +4,6 @@
   <h1><?= $page->title() ?></h1>
 </header>
 
-<?= $page->story()->kirbytext() ?>
+<?= $page->text()->kirbytext() ?>
 
 <? snippet("layout-bottom") ?>
