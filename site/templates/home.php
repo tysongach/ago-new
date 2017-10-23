@@ -44,6 +44,24 @@
   </h2>
 
   <?= $pages->find("about")->story()->kirbytext() ?>
+
+  <? if($page->donate_url()->isNotEmpty()): ?>
+    <br>
+    <a href="<?= $page->donate_url() ?>"
+       target="_blank"
+       rel="noopener">
+      Donate
+    </a>
+  <? endif ?>
+
+  <? if($page->exhibit_url()->isNotEmpty()): ?>
+    <br>
+    <a href="<?= $page->exhibit_url() ?>"
+       target="_blank"
+       rel="noopener">
+      Exhibit
+    </a>
+  <? endif ?>
 </section>
 
 <section class="p-section">
