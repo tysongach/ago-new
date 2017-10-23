@@ -61,9 +61,11 @@
           <p class="c-card__title">
             <?= $featured_performance->title() ?>
           </p>
-          <p class="c-card__sub-title">
-            <?= $featured_performance->venue() ?>
-          </p>
+          <? if($venue = $pages->find("programming")->children()->find("venues")->find($featured_performance->venue())): ?>
+            <p class="c-card__sub-title">
+              <?= $venue->title() ?>
+            </p>
+          <? endif ?>
         </a>
       </li>
     <? endforeach ?>
