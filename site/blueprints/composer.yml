@@ -6,9 +6,7 @@ files:
   height: 2000
   fields:
     focus:
-      label: Specify the focus point
-      type: focus
-      help: If this image gets cropped, it will crop towards this focus point
+      extends: focus_image
 fields:
   title:
     label: Full Name

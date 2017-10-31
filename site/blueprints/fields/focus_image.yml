@@ -1,0 +1,5 @@
+label: Click image to adjust the focal point
+type: focus
+help: >
+  If this image gets cropped, the focal point is used so that the most important
+  part of the image is not cut off
