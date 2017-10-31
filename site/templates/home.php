@@ -43,7 +43,9 @@
     The AGO National Convention
   </h2>
 
-  <?= $pages->find("about")->story()->kirbytext() ?>
+  <div class="s-prose">
+    <?= $pages->find("about")->story()->kirbytext() ?>
+  </div>
 
   <br>
   <? snippet("donate-form") ?>
