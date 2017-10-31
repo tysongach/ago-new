@@ -17,9 +17,6 @@ fields:
   hero_photo:
     label: Hero Photo
     type: image
-  donate_url:
-    label: Donate URL
-    type: url
   exhibit_url:
     label: Exhibit URL
     type: url

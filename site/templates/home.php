@@ -45,18 +45,13 @@
 
   <?= $pages->find("about")->story()->kirbytext() ?>
 
-  <? if($page->donate_url()->isNotEmpty()): ?>
-    <br>
-    <a href="<?= $page->donate_url() ?>"
-       target="_blank"
-       rel="noopener">
-      Donate
-    </a>
-  <? endif ?>
+  <br>
+  <? snippet("donate-form") ?>
 
   <? if($page->exhibit_url()->isNotEmpty()): ?>
     <br>
-    <a href="<?= $page->exhibit_url() ?>"
+    <a class="c-button"
+       href="<?= $page->exhibit_url() ?>"
        target="_blank"
        rel="noopener">
       Exhibit
