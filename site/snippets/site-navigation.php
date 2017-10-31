@@ -7,5 +7,12 @@
     </a>
   <? endforeach ?>
 
+  <a class="c-site-nav__link"
+     href="<?= $site->cvent_registration_url() ?>"
+     target="_blank"
+     rel="noopener">
+    Register
+  </a>
+
   <? snippet("ago-kc-2018-logo") ?>
 </nav>

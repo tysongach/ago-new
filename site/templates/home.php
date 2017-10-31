@@ -23,7 +23,7 @@
     </p>
 
     <a class="c-button c-button--large c-hero__cta"
-       href="<?= $pages->find("registration")->cvent_registration_url() ?>"
+       href="<?= $site->cvent_registration_url() ?>"
        target="_blank"
        rel="noopener">
       Register
