@@ -1,7 +1,7 @@
 .DS_Store
 /assets/avatars
 /assets/stylesheets/*.css
-/content/
+/content/*
 /node_modules
 /site/accounts
 /thumbs/*
