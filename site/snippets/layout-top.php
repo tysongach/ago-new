@@ -7,6 +7,7 @@
     <title><?= $site->title()->html() ?> - <?= $page->title()->html() ?></title>
     <?= css("assets/stylesheets/main.css") ?>
     <?= css("https://use.typekit.net/btb5kwj.css") ?>
+    <? snippet("structured-data") ?>
   </head>
   <body>
     <div class="p-container">
