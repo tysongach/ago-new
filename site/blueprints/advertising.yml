@@ -1,6 +1,5 @@
-title: Contact
-pages:
-  template: default
+title: Advertising
+pages: false
 files: true
 fields:
   title:

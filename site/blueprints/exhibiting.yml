@@ -1,6 +1,5 @@
-title: Contact
-pages:
-  template: default
+title: Exhibiting
+pages: false
 files: true
 fields:
   title:
