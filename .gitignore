@@ -4,4 +4,5 @@
 /content/*
 /node_modules
 /site/accounts
+/site/config/config.www.agokc2018.com.php
 /thumbs/*
