@@ -1,3 +1,4 @@
+<? snippet("maintenance-mode") ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
