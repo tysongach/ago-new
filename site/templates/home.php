@@ -32,7 +32,7 @@
 
   <div class="p-grid__item u-2/3 u-line-height-0">
     <? if($photo = $page->hero_photo()->toFile()): ?>
-      <img src="<?= $photo->focusCrop(750, 500)->url() ?>"
+      <img src="<?= $photo->focusCrop(1125, 750)->url() ?>"
            alt="">
     <? endif ?>
   </div>
