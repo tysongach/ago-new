@@ -47,18 +47,17 @@
     <?= $pages->find("about")->story()->kirbytext() ?>
   </div>
 
-  <br>
-  <? snippet("donate-form") ?>
+  <div class="button-row">
+    <? snippet("donate-form") ?>
 
-  <? if($page->exhibit_url()->isNotEmpty()): ?>
-    <br>
-    <a class="c-button"
-       href="<?= $page->exhibit_url() ?>"
-       target="_blank"
-       rel="noopener">
+    <a class="c-button" href="/contact/advertising">
+      Advertise
+    </a>
+
+    <a class="c-button" href="/contact/exhibiting">
       Exhibit
     </a>
-  <? endif ?>
+  </div>
 </section>
 
 <section class="p-section">

@@ -17,9 +17,6 @@ fields:
   hero_photo:
     label: Hero Photo
     type: image
-  exhibit_url:
-    label: Exhibit URL
-    type: url
   advertisements:
     extends: pick_many_advertisements
     limit: 3

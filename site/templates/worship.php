@@ -15,7 +15,7 @@
 </header>
 
 <div class="p-grid">
-  <div class="p-grid__item u-1/2">
+  <div class="p-grid__item s-prose u-1/2">
     <?= $page->text()->kirbytext() ?>
 
     <ul>
@@ -23,7 +23,6 @@
         <?= $page->date("l, F j") ?><br>
         <?= $page->date("g:i", "time") ?>&thinsp;&ndash;&thinsp;<?= $page->date("g:ia", "end_time") ?>
       </li>
-      <li><?= $page->venue() ?></li>
     </ul>
   </div>
 

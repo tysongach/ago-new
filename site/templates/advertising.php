@@ -19,6 +19,13 @@
 
   <div class="p-grid__item s-prose u-3/4">
     <?= $page->text()->kirbytext() ?>
+
+    <a class="c-button"
+       href="<?= $site->cvent_registration_url() ?>"
+       target="_blank"
+       rel="noopener">
+      Reserve Space Now
+    </a>
   </div>
 </div>
 

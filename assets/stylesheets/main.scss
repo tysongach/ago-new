@@ -37,3 +37,11 @@
 .c-card {
   margin-bottom: $space-large;
 }
+
+.button-row {
+  display: flex;
+
+  .c-button {
+    margin-right: 1rem;
+  }
+}
