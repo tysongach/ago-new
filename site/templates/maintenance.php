@@ -1,4 +1,4 @@
-<? if($site->maintenance_mode()->isFalse()): ?>
+<? if(c::get("maintenance_mode") == false): ?>
   <? go("/") ?>
 <? else: ?>
   <!DOCTYPE html>

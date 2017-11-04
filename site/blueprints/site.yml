@@ -26,11 +26,3 @@ fields:
     help: This register CTA found on the bottom of each page.
   line:
     type: line
-  maintenance_mode:
-    label: Maintenance Mode
-    type: toggle
-    text: on/off
-    default: false
-    help: >
-      This will display a “down for maintenance” page to all visitors. Note that
-      if you are logged into the CMS, you can view the site as normal.
