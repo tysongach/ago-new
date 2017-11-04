@@ -21,7 +21,7 @@ gulp.task("serve", ["sass"], function() {
 
 gulp.task("sass", function() {
   return gulp.src("assets/stylesheets/*.scss")
-    .pipe(sass(eyeglass()))
+    .pipe(sass(eyeglass({outputStyle: "compressed"})))
     .pipe(autoprefixer({
       browsers: ["last 2 versions"]
     }))
