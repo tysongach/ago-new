@@ -1,0 +1,13 @@
+$_browser-notice-background-color: $white;
+$_browser-notice-color: shade($ago-orange, 8%);
+
+.c-browser-notice {
+  background-color: $_browser-notice-background-color;
+  color: $_browser-notice-color;
+  padding: 1rem;
+  text-align: center;
+
+  a {
+    color: $_browser-notice-color;
+  }
+}

@@ -11,6 +11,13 @@
     <? snippet("structured-data") ?>
   </head>
   <body>
+    <!--[if lte IE 9]>
+      <p class="c-browser-notice">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
     <div class="p-container">
       <? snippet("site-navigation") ?>
         <main role="main">
