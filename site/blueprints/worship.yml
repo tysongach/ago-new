@@ -18,6 +18,32 @@ fields:
     type: textarea
   venue:
     extends: venue
+  performers:
+    label: Performers
+    type: structure
+    entry: >
+      {{performer}}
+    fields:
+      performer:
+        label: Performer
+        type: select
+        options: query
+        query:
+          page: ../../performers
+          fetch: visibleChildren
+  composers:
+    label: Composers
+    type: structure
+    entry: >
+      {{composer}}
+    fields:
+      composer:
+        label: Composer
+        type: select
+        options: query
+        query:
+          page: ../../composers
+          fetch: visibleChildren
   photo:
     label: Photo
     type: image
