@@ -8,15 +8,24 @@ options:
   delete: false
 files:
   fields:
+    caption:
+      label: Caption
+      type: textarea
     focus:
       extends: focus_image
 fields:
   title:
     label: Title
     type: text
-  hero_photo:
-    label: Hero Photo
-    type: image
+  hero_photos:
+    label: Hero Photos
+    type: structure
+    style: table
+    limit: 3
+    fields:
+      hero_photo:
+        label: Photo
+        type: image
   advertisements:
     extends: pick_many_advertisements
     limit: 3

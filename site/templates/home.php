@@ -30,11 +30,18 @@
     </a>
   </div>
 
-  <div class="p-grid__item u-2/3 u-line-height-0">
-    <? if($photo = $page->hero_photo()->toFile()): ?>
-      <img src="<?= $photo->focusCrop(1125, 750)->url() ?>"
-           alt="">
-    <? endif ?>
+  <div class="p-grid__item u-2/3">
+    <div class="c-carousel" data-js="hero-carousel">
+      <? foreach($page->hero_photos()->toStructure() as $photo): ?>
+        <figure class="c-carousel__cell" data-js="hero-carousel-cell">
+          <img src="<?= $page->image($photo)->focusCrop(1125, 750)->url() ?>"
+               alt="">
+          <figcaption class="c-carousel__cell-caption">
+            <?= $page->image($photo)->caption() ?>
+          </figcaption>
+        </figure>
+      <? endforeach ?>
+    </div>
   </div>
 </header>
 
@@ -108,5 +115,17 @@
 
   <? snippet("newsletter-signup") ?>
 </section>
+
+<script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
+<script>
+  var elem = document.querySelector('[data-js="hero-carousel"]');
+  var flkty = new Flickity( elem, {
+    autoPlay: 5000,
+    cellSelector: '[data-js="hero-carousel-cell"]',
+    pageDots: false,
+    prevNextButtons: false,
+    wrapAround: true
+  });
+</script>
 
 <? snippet("layout-bottom") ?>

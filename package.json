@@ -1,5 +1,8 @@
 {
   "name": "agokc2018.com",
+  "dependencies": {
+    "flickity": "^2.0.10"
+  },
   "devDependencies": {
     "bourbon": "^5.0.0-beta.8",
     "browser-sync": "^2.18.12",

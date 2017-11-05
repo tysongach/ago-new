@@ -2,6 +2,8 @@
 
 @import "reset/normalize";
 
+@import "../../node_modules/flickity/dist/flickity.min.css";
+
 @import "library/variables";
 
 @import "base/forms";
@@ -19,6 +21,7 @@
 @import "components/browser-notice";
 @import "components/button";
 @import "components/card";
+@import "components/carousel";
 @import "components/cta-section";
 @import "components/hero";
 @import "components/schedule";

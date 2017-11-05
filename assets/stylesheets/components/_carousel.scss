@@ -1,0 +1,9 @@
+.c-carousel__cell {
+  margin-right: $space-x-small;
+  width: 100%;
+}
+
+.c-carousel__cell-caption {
+  font-family: $font-family-sans-serif;
+  font-size: modular-scale(-2);
+}
