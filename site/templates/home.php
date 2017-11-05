@@ -67,31 +67,28 @@
   </div>
 </section>
 
-<section class="p-section">
-  <h2 class="p-section__heading">
-    Featured Performances
-  </h2>
+<? if($featured_venues->count() > 0): ?>
+  <section class="p-section">
+    <h2 class="p-section__heading">
+      Select Venues
+    </h2>
 
-  <ul class="p-grid u-list-bare">
-    <? foreach($featured_performances as $featured_performance): ?>
-      <li class="p-grid__item c-card u-1/2">
-        <a class="c-card__link" href="<?= $featured_performance->url() ?>">
-          <? if($photo = $featured_performance->photo()->toFile()): ?>
-            <img src="<?= $photo->focusCrop(750, 500)->url() ?>" alt="">
-          <? endif ?>
-          <p class="c-card__title">
-            <?= $featured_performance->title() ?>
-          </p>
-          <? if($venue = $pages->find("programming")->children()->find("venues")->find($featured_performance->venue())): ?>
-            <p class="c-card__sub-title">
-              <?= $venue->title() ?>
+    <ul class="p-grid u-list-bare">
+      <? foreach($featured_venues as $featured_venue): ?>
+        <li class="p-grid__item c-card u-1/2">
+          <a class="c-card__link" href="<?= $featured_venue->url() ?>">
+            <? if($photo = $featured_venue->photo()->toFile()): ?>
+              <img src="<?= $photo->focusCrop(750, 500)->url() ?>" alt="">
+            <? endif ?>
+            <p class="c-card__title">
+              <?= $featured_venue->title() ?>
             </p>
-          <? endif ?>
-        </a>
-      </li>
-    <? endforeach ?>
-  </ul>
-</section>
+          </a>
+        </li>
+      <? endforeach ?>
+    </ul>
+  </section>
+<? endif ?>
 
 <section class="p-section">
   <div class="p-grid">

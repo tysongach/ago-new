@@ -35,3 +35,8 @@ fields:
   chapter_page:
     label: Chapter Page URL
     type: url
+  featured:
+    label: Feature this venue on the home page?
+    type: toggle
+    text: yes/no
+    default: false
