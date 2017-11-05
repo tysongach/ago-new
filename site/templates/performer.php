@@ -10,7 +10,7 @@
         &larr;
       </span>
 
-      Back to all <?= $programming->title() ?>
+      Back to all <?= $page->parent()->title() ?>
     </a>
   </nav>
 </header>

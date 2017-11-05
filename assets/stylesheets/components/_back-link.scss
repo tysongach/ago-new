@@ -1,8 +1,10 @@
 .c-back-link {
+  @include margin($space-small null $space-medium);
   font-family: $font-family-sans-serif;
   line-height: 1;
 
   a {
+    color: $ago-yellow;
     text-decoration: none;
   }
 
