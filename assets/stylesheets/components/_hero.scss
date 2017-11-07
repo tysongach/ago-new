@@ -42,4 +42,8 @@
 
 .c-hero__cta {
   margin-top: $space-x-small;
+
+  @media (max-width: $medium-screen) {
+    margin-bottom: $space-medium;
+  }
 }

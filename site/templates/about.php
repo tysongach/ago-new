@@ -5,7 +5,7 @@
 </header>
 
 <div class="p-grid">
-  <div class="p-grid__item s-prose u-2/3">
+  <div class="p-grid__item s-prose u-2/3@medium">
     <?= $page->story()->kirbytext() ?>
   </div>
 </div>

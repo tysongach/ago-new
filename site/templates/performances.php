@@ -5,11 +5,11 @@
 </header>
 
 <div class="p-grid">
-  <div class="p-grid__item u-1/4">
+  <div class="p-grid__item u-1/1 u-1/4@medium">
     <? snippet("programming-navigation") ?>
   </div>
 
-  <div class="p-grid__item u-3/4">
+  <div class="p-grid__item u-1/1 u-3/4@medium">
     <ul class="p-grid u-list-bare">
       <? foreach($page->children()->visible() as $subpage): ?>
         <li class="p-grid__item c-card u-1/2">

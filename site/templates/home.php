@@ -1,7 +1,7 @@
 <? snippet("layout-top") ?>
 
 <header class="p-grid p-section p-section--pad-bottom-only c-hero">
-  <div class="p-grid__item c-hero__details u-1/3">
+  <div class="p-grid__item c-hero__details u-1/1 u-1/3@medium">
     <h1 class="c-hero__heading">
       <?= $page_title ?>
     </h1>
@@ -30,7 +30,7 @@
     </a>
   </div>
 
-  <div class="p-grid__item u-2/3">
+  <div class="p-grid__item u-1/1 u-2/3@medium">
     <div class="c-carousel" data-js="hero-carousel">
       <? foreach($page->hero_photos()->toStructure() as $photo): ?>
         <figure class="c-carousel__cell" data-js="hero-carousel-cell">
