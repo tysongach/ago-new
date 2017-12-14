@@ -14,6 +14,11 @@
        rel="noopener">
       Register
     </a>
+
+    <a class="c-site-nav__link"
+       href="/programming/youth">
+      Young Organists
+    </a>
   </div>
 
   <? snippet("ago-kc-2018-logo") ?>

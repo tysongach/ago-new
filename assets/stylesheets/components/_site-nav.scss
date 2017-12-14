@@ -12,7 +12,7 @@
   order: 2;
   width: 100%;
 
-  @media (min-width: $medium-screen) {
+  @media (min-width: 58em) {
     order: 0;
     width: auto;
   }
@@ -29,7 +29,7 @@
     width: calc(#{percentage(1 / 4)} - #{$space-medium});
   }
 
-  @media (min-width: $medium-screen) {
+  @media (min-width: 58em) {
     margin-bottom: 0;
     margin-right: 0;
     width: auto;
@@ -48,7 +48,7 @@
 .c-site-nav__logo {
   max-width: 8rem;
 
-  @media (min-width: $medium-screen) {
+  @media (min-width: 58em) {
     margin-left: auto;
   }
 }
