@@ -11,6 +11,8 @@
 
   <div class="p-grid__item s-prose u-1/1 u-3/4@medium">
     <?= $page->text()->kirbytext() ?>
+
+    <? snippet("donate-form") ?>
   </div>
 </div>
 
