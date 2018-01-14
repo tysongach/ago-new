@@ -21,7 +21,7 @@ fields:
     label: Hero Photos
     type: structure
     style: table
-    limit: 3
+    limit: 8
     fields:
       hero_photo:
         label: Photo
