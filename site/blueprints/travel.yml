@@ -1,5 +1,6 @@
 title: Travel
-pages: false
+pages:
+  template: default
 files: true
 fields:
   title:

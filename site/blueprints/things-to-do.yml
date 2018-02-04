@@ -1,0 +1,11 @@
+title: Things to Do
+pages:
+  num: zero
+  template: thing-to-do
+files: false
+options:
+  template: false
+fields:
+  title:
+    label: Title
+    type: text
