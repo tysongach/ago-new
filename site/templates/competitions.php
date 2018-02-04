@@ -14,9 +14,4 @@
   </div>
 </div>
 
-<? if($page->advertisement()->isNotEmpty()): ?>
-  <? $ad = $pages->find("advertisements")->find($page->advertisement()) ?>
-  <? snippet("advertisement", array("ad" => $ad)) ?>
-<? endif ?>
-
 <? snippet("layout-bottom") ?>

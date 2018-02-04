@@ -8,6 +8,10 @@ $_gutter-width: 2rem;
   margin-left: -$_gutter-width;
 }
 
+.p-grid--align-right {
+  justify-content: flex-end;
+}
+
 .p-grid__item {
   padding-left: $_gutter-width;
 }

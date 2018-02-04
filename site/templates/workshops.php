@@ -27,9 +27,15 @@
   </div>
 </div>
 
-<? if($page->advertisement()->isNotEmpty()): ?>
-  <? $ad = $pages->find("advertisements")->find($page->advertisement()) ?>
-  <? snippet("advertisement", array("ad" => $ad)) ?>
+<? if($page->advertisements()->isNotEmpty()): ?>
+  <div class="p-grid p-grid--align-right">
+    <? foreach($page->advertisements()->toStructure() as $ad): ?>
+      <div class="p-grid__item u-1/4">
+        <? $ad = $pages->find("advertisements")->find($ad) ?>
+        <? snippet("advertisement", array("ad" => $ad)) ?>
+      </div>
+    <? endforeach ?>
+  </div>
 <? endif ?>
 
 <? snippet("layout-bottom") ?>

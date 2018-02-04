@@ -10,5 +10,7 @@ fields:
   title:
     label: Title
     type: text
-  advertisement:
-    extends: pick_advertisement
+  advertisements:
+    extends: pick_many_advertisements
+    limit: 3
+    help: Pick 3 advertisements
