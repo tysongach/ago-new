@@ -38,7 +38,9 @@
           </td>
           <td>
             <span class="c-schedule__event-title">
-              <?= $event->title() ?>
+              <a href="<?= $event->url() ?>">
+                <?= $event->title() ?>
+              </a>
             </span>
             <br>
             <? if($venue = $pages->find("programming")->children()->find("venues")->find($event->venue())): ?>
