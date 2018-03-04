@@ -18,12 +18,8 @@
   <div class="p-grid__item u-1/2 s-prose">
     <?= $page->text()->kirbytext() ?>
 
-    <ul>
-      <li>
-        <?= $page->date("l, F j") ?><br>
-        <?= $page->date("g:i", "time") ?>&thinsp;&ndash;&thinsp;<?= $page->date("g:ia", "end_time") ?>
-      </li>
-      <li><?= $page->venue() ?></li>
+    <?= $page->date("l, F j") ?><br>
+    <?= $page->date("g:i", "time") ?>&thinsp;&ndash;&thinsp;<?= $page->date("g:ia", "end_time") ?>
     </ul>
   </div>
 

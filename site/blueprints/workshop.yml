@@ -16,8 +16,6 @@ fields:
   text:
     label: About the Workshop
     type: textarea
-  venue:
-    extends: venue
   photo:
     label: Photo
     type: image
