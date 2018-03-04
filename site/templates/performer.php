@@ -15,7 +15,7 @@
 </header>
 
 <div class="p-grid">
-  <div class="p-grid__item u-1/2">
+  <div class="p-grid__item u-1/2 s-prose">
     <p class="location"><?= $page->location() ?></p>
     <p><?= $page->bio()->kirbytext() ?></p>
 

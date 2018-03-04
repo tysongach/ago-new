@@ -17,7 +17,7 @@
     </nav>
   </div>
 
-  <div class="p-grid__item s-prose u-3/4">
+  <div class="p-grid__item u-3/4 s-prose">
     <?= $page->text()->kirbytext() ?>
 
     <a class="c-button"
