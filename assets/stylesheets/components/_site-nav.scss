@@ -20,6 +20,7 @@
 
 .c-site-nav__link {
   display: inline-block;
+  font-size: modular-scale(-1);
   margin-bottom: $space-small;
   margin-right: $space-medium;
   text-decoration: none;
