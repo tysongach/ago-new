@@ -22,7 +22,7 @@
     <? foreach($groupedEvents as $day => $eventsPerDay): ?>
       <tr>
         <th class="c-schedule__day-heading" colspan="3" scope="colgroup">
-          <?= $day ?></h2>
+          <?= $day ?>
         </th>
       </tr>
 
