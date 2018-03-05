@@ -1,5 +1,6 @@
 title: Programming
-pages: true
+pages:
+  template: default
 files: false
 fields:
   title:
