@@ -7,7 +7,7 @@
     return $p->date("l, F j");
   };
 
-  $groupedEvents = $events->visible()->group($eventDate)->sortBy("date");
+  $groupedEvents = $events->visible()->group($eventDate);
 
   return compact("groupedEvents");
 } ?>
