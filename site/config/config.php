@@ -1,6 +1,6 @@
 <?
 c::set("cache", false);
-c::set("cache.ignore", array("sitemap"));
+c::set("cache.ignore", array("sitemap", "search"));
 c::set("debug", true);
 c::set("license", "");
 

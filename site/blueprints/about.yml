@@ -5,6 +5,6 @@ fields:
   title:
     label: Title
     type: text
-  story:
-    label: Chapter Story
+  text:
+    label: Text
     type: textarea

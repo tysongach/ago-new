@@ -46,13 +46,15 @@
 </header>
 
 <section class="p-section">
-  <h2 class="p-section__heading">
-    The AGO National Convention
-  </h2>
+  <? if($page->text()->isNotEmpty()): ?>
+    <h2 class="p-section__heading">
+      The AGO National Convention
+    </h2>
 
-  <div class="s-prose">
-    <?= $pages->find("about")->story()->kirbytext() ?>
-  </div>
+    <div class="s-prose">
+      <?= $page->text()->kirbytext() ?>
+    </div>
+  <? endif ?>
 
   <div class="button-row">
     <? snippet("donate-form") ?>

@@ -19,6 +19,11 @@
        href="/programming/youth">
       Young Organists
     </a>
+
+    <a class="c-site-nav__link"
+       href="/search">
+      Search
+    </a>
   </div>
 
   <? snippet("ago-kc-2018-logo") ?>
