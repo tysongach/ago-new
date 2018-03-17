@@ -25,3 +25,11 @@
 .u-text-right {
   text-align: right !important;
 }
+
+.u-text-sans-serif {
+  font-family: $font-family-sans-serif !important;
+}
+
+.u-text-small {
+  font-size: modular-scale(-1) !important;
+}

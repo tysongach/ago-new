@@ -20,6 +20,12 @@
             <p class="c-card__title">
               <?= $subpage->title() ?>
             </p>
+
+            <p class="u-text-small u-text-sans-serif">
+              <?= $subpage->date("l, F j") ?>
+              <br>
+              <?= $subpage->date("g:i", "time") ?>&thinsp;&ndash;&thinsp;<?= $subpage->date("g:ia", "end_time") ?>
+            </p>
           </a>
         </li>
       <? endforeach ?>
